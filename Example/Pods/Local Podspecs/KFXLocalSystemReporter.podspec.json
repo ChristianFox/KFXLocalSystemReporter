@@ -1,15 +1,15 @@
 {
   "name": "KFXLocalSystemReporter",
   "version": "0.1.0",
-  "summary": "A short description of KFXLocalSystemReporter.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/KFXLocalSystemReporter",
+  "summary": "A few classes for getting information about the device and software",
+  "description": "Included: KFXHardwareReporter, KFXSoftwareReporter, KFXDeviceActivityReporter",
+  "homepage": "https://kfxtech@bitbucket.org/kfxtech/kfxlocalsystemreporter_pod_private.git",
   "license": "MIT",
   "authors": {
     "Christian Fox": "christianfox890@icloud.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/KFXLocalSystemReporter.git",
+    "git": "https://kfxtech@bitbucket.org/kfxtech/kfxlocalsystemreporter_pod_private.git",
     "tag": "0.1.0"
   },
   "platforms": {

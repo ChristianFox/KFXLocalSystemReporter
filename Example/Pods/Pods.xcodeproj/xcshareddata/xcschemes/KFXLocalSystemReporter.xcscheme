@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '07888D856FBF96DDC38CCD64'
+               BlueprintIdentifier = '7D8A9A59C0AF3C45790BF1DD'
                BlueprintName = 'KFXLocalSystemReporter'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'KFXLocalSystemReporter.framework'>

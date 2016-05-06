@@ -1,0 +1,1 @@
+../../../../../KFXLocalSystemReporter/Classes/KFXHardwareReporter.h
