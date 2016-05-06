@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 Included: KFXHardwareReporter, KFXSoftwareReporter, KFXDeviceActivityReporter
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/KFXLocalSystemReporter"
+  s.homepage         = "https://kfxtech@bitbucket.org/kfxtech/kfxlocalsystemreporter_pod_private.git"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Christian Fox" => "christianfox890@icloud.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/KFXLocalSystemReporter.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://kfxtech@bitbucket.org/kfxtech/kfxlocalsystemreporter_pod_private.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
