@@ -1,0 +1,14 @@
+PODS:
+  - KFXLocalSystemReporter (0.1.0)
+
+DEPENDENCIES:
+  - KFXLocalSystemReporter (from `../`)
+
+EXTERNAL SOURCES:
+  KFXLocalSystemReporter:
+    :path: ../
+
+SPEC CHECKSUMS:
+  KFXLocalSystemReporter: 89867b38f339492c9379166c8f601a1bb796f90a
+
+COCOAPODS: 0.39.0

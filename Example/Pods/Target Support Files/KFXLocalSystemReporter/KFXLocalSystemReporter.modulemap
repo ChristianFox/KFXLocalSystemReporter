@@ -1,0 +1,6 @@
+framework module KFXLocalSystemReporter {
+  umbrella header "KFXLocalSystemReporter-umbrella.h"
+
+  export *
+  module * { export * }
+}

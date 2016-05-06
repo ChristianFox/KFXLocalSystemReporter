@@ -1,0 +1,19 @@
+{
+  "name": "KFXLocalSystemReporter",
+  "version": "0.1.0",
+  "summary": "A short description of KFXLocalSystemReporter.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/KFXLocalSystemReporter",
+  "license": "MIT",
+  "authors": {
+    "Christian Fox": "christianfox890@icloud.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/KFXLocalSystemReporter.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "KFXLocalSystemReporter/Classes/**/*"
+}
