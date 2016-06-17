@@ -15,6 +15,7 @@
 @implementation KFXHardwareReporter
 
 #pragma mark - Hardware
+//Courtesy of https://github.com/InderKumarRathore/DeviceUtil/blob/master/DeviceUtil.m
 +(NSString*)hardwareDescription
 {
     NSString *hardware = [self hardwareString];
@@ -83,6 +84,9 @@
     return nil;
 }
 
+
+//Courtesy of https://github.com/InderKumarRathore/UIDevice-Hardware/blob/master/UIDevice%2BHardware.m
+//https://www.theiphonewiki.com/wiki/Models
 + (NSString*)hardwareString
 {
     size_t size = 100;
