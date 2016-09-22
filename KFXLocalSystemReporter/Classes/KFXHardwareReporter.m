@@ -34,9 +34,12 @@
     if ([hardware isEqualToString:@"iPhone6,2"]) return @"iPhone 5S (Global)";
     if ([hardware isEqualToString:@"iPhone7,1"]) return @"iPhone 6 Plus";
     if ([hardware isEqualToString:@"iPhone7,2"]) return @"iPhone 6";
-    if ([hardware isEqualToString:@"iPhone8_1"]) return @"iPhone 6S";
-    if ([hardware isEqualToString:@"iPhone8_2"]) return @"iPhone 6S Plus";
-    
+    if ([hardware isEqualToString:@"iPhone8,1"]) return @"iPhone 6S";
+    if ([hardware isEqualToString:@"iPhone8,2"]) return @"iPhone 6S Plus";
+    if ([hardware isEqualToString:@"iPhone8,3"]) return @"iPhone SE";
+    if ([hardware isEqualToString:@"iPhone9,3"]) return @"iPhone 7S";
+    if ([hardware isEqualToString:@"iPhone9,2"]) return @"iPhone 7S Plus";
+
     
     if ([hardware isEqualToString:@"iPod1,1"]) return @"iPod Touch (1 Gen)";
     if ([hardware isEqualToString:@"iPod2,1"]) return @"iPod Touch (2 Gen)";
@@ -75,12 +78,23 @@
     if ([hardware isEqualToString:@"iPad5,3"]) return @"iPad Air 2 (Wi-Fi)";
     if ([hardware isEqualToString:@"iPad5,4"]) return @"iPad Air 2 (Cellular)";
     
-    if ([hardware isEqualToString:@"iPad6,7"]) return @"iPad Pro (Wi-Fi)";
-    if ([hardware isEqualToString:@"iPad6,8"]) return @"iPad Pro (Wi-Fi + Cellular)";
+    if ([hardware isEqualToString:@"iPad6,3"]) return @"iPad Pro (9.7\")(Wi-Fi)";
+    if ([hardware isEqualToString:@"iPad6,4"]) return @"iPad Pro (9.7\")(Wi-Fi + Cellular)";
+
+    if ([hardware isEqualToString:@"iPad6,7"]) return @"iPad Pro (12.9\")(Wi-Fi)";
+    if ([hardware isEqualToString:@"iPad6,8"]) return @"iPad Pro (12.9\")(Wi-Fi + Cellular)";
     
-    if ([hardware isEqualToString:@"i386"]) return @"Simulator";
-    if ([hardware isEqualToString:@"x86_64"]) return @"Simulator";
+//    if ([hardware isEqualToString:@"i386"]) return @"Simulator";
+//    if ([hardware isEqualToString:@"x86_64"]) return @"Simulator";
     
+    // https://github.com/erichoracek/UIDevice-Hardware/blob/master/UIDevice-Hardware.m
+    // Simulator
+    if ([hardware hasSuffix:@"86"] || [hardware isEqual:@"x86_64"])
+    {
+        BOOL smallerScreen = ([[UIScreen mainScreen] bounds].size.width < 768.0);
+        return (smallerScreen ? @"iPhone Simulator" : @"iPad Simulator");
+    }
+
     return nil;
 }
 
@@ -110,6 +124,16 @@
     }
 }
 
+// https://github.com/erichoracek/UIDevice-Hardware/blob/master/UIDevice-Hardware.h
++ (UIDeviceFamily) deviceFamily
+{
+    NSString *modelIdentifier = [self hardwareString];
+    if ([modelIdentifier hasPrefix:@"iPhone"]) return UIDeviceFamilyiPhone;
+    if ([modelIdentifier hasPrefix:@"iPod"]) return UIDeviceFamilyiPod;
+    if ([modelIdentifier hasPrefix:@"iPad"]) return UIDeviceFamilyiPad;
+    if ([modelIdentifier hasPrefix:@"AppleTV"]) return UIDeviceFamilyAppleTV;
+    return UIDeviceFamilyUnknown;
+}
 
 
 

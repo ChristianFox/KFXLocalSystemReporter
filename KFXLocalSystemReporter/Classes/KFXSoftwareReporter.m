@@ -41,6 +41,8 @@
 
 }
 
-
++(id)valueFromInfoPlistForKey:(NSString *)key{
+    return [[NSBundle mainBundle]objectForInfoDictionaryKey:key];
+}
 
 @end

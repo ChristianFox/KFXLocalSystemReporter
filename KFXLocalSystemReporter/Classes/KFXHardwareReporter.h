@@ -6,6 +6,16 @@
 //
 //
 
+// https://github.com/erichoracek/UIDevice-Hardware/blob/master/UIDevice-Hardware.h
+typedef NS_ENUM(NSUInteger, UIDeviceFamily) {
+    UIDeviceFamilyiPhone,
+    UIDeviceFamilyiPod,
+    UIDeviceFamilyiPad,
+    UIDeviceFamilyAppleTV,
+    UIDeviceFamilyUnknown,
+};
+
+
 #import <Foundation/Foundation.h>
 
 @interface KFXHardwareReporter : NSObject

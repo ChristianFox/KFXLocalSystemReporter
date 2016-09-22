@@ -20,5 +20,6 @@
 +(NSString*)bundleName;
 +(NSString*)bundleDisplayName;
 +(NSString*)bundleIdentifier;
++(id)valueFromInfoPlistForKey:(NSString*)key;
 
 @end

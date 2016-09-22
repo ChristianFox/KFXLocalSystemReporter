@@ -1,11 +1,11 @@
 use_frameworks!
 
-target 'KFXLocalSystemReporter_Example', :exclusive => true do
-  pod 'KFXLocalSystemReporter', :path => '../'
-end
-
-target 'KFXLocalSystemReporter_Tests', :exclusive => true do
-  pod 'KFXLocalSystemReporter', :path => '../'
-
-  
+target 'KFXLocalSystemReporter_Example' do
+    pod 'KFXLocalSystemReporter', :path => '../'
+    
+    target 'KFXLocalSystemReporter_Tests' do
+        inherit! :search_paths
+        
+        
+    end
 end

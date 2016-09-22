@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "KFXLocalSystemReporter"
-  s.version          = "0.1.0"
+  s.version          = "0.2.0"
   s.summary          = "A few classes for getting information about the device and software"
 
 # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Included: KFXHardwareReporter, KFXSoftwareReporter, KFXDeviceActivityReporter
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Christian Fox" => "christianfox890@icloud.com" }
-  s.source           = { :git => "https://kfxtech@bitbucket.org/kfxtech/kfxlocalsystemreporter_pod_private.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://kfxtech@bitbucket.org/kfxteam/kfxlocalsystemreporter_pod_private.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
