@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B62DDB41EDA22D7005C1206 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 5B62DDB31EDA22D7005C1206 /* CHANGELOG.md */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -40,6 +41,7 @@
 		3AF74C08FDBBD1FFE6EE3248 /* Pods-KFXLocalSystemReporter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFXLocalSystemReporter_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KFXLocalSystemReporter_Example/Pods-KFXLocalSystemReporter_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		43E93500E9CAB62E58BF5699 /* Pods-KFXLocalSystemReporter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFXLocalSystemReporter_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KFXLocalSystemReporter_Tests/Pods-KFXLocalSystemReporter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		520F2A43320950C702075CAC /* Pods_KFXLocalSystemReporter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KFXLocalSystemReporter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B62DDB31EDA22D7005C1206 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* KFXLocalSystemReporter_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFXLocalSystemReporter_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -189,6 +191,7 @@
 				E9FD89CF5BEB4EA6D39EA47E /* KFXLocalSystemReporter.podspec */,
 				F6D3542AE96A5C63759E0D4B /* README.md */,
 				BC9D0A37583572D455EFC007 /* LICENSE */,
+				5B62DDB31EDA22D7005C1206 /* CHANGELOG.md */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 				6003F59E195388D20070C39A /* KFXAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* KFXViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				5B62DDB41EDA22D7005C1206 /* CHANGELOG.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
