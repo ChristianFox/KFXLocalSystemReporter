@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "KFXLocalSystemReporter"
-  s.version          = "0.3.1"
+  s.version          = "0.3.4"
   s.summary          = "A few classes for getting information about the device and software"
   s.description      = <<-DESC
 Included: KFXHardwareReporter, KFXSoftwareReporter, KFXDeviceActivityReporter
