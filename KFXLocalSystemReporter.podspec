@@ -15,6 +15,6 @@ Included: KFXHardwareReporter, KFXSoftwareReporter, KFXDeviceActivityReporter
   s.ios.deployment_target = '8.0'
   s.source_files = 'KFXLocalSystemReporter/Classes/**/*'
   s.resource_bundles = {
-    'KFXLocalSystemReporter' => ['KFXLocalSystemReporter/License/*.md']
+    'KFXLocalSystemReporter' => ['KFXLocalSystemReporter/Licence/**/*']
   }
 end
