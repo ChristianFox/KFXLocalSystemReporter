@@ -14,7 +14,6 @@
 		37BEAD39578AEA60AE13F5492BB07295 /* Pods-KFXLocalSystemReporter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F255C076D905BE77128544D24F4896 /* Pods-KFXLocalSystemReporter_Example-dummy.m */; };
 		47346583AB8F0F5C756DB89CBD079C7B /* KFXHardwareReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = E909BDC975F2AB8EF0790D30577BE2DD /* KFXHardwareReporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B6D126564F585302362B3B4DAE7DCA6 /* KFXLocalSystemReporter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C193FB54DD8620CAD58D56858258F09 /* KFXLocalSystemReporter-dummy.m */; };
-		5B62DDB01EDA2041005C1206 /* ExternalSources.md in Sources */ = {isa = PBXBuildFile; fileRef = 5B62DDAF1EDA2041005C1206 /* ExternalSources.md */; };
 		5B62DDB21EDA2226005C1206 /* License.md in Sources */ = {isa = PBXBuildFile; fileRef = 5B62DDB11EDA2226005C1206 /* License.md */; };
 		65FAD7A8DE036CA75F670D1E38807298 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		836D17849F88EE4365979F97EB3C95E4 /* KFXLocalSystemReporter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9220910E190CB60478FD6548B9FAF50 /* KFXLocalSystemReporter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -52,8 +51,8 @@
 		3FD6DF8F7C439CFC6FB986F869384807 /* KFXLocalSystemReporter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KFXLocalSystemReporter.modulemap; sourceTree = "<group>"; };
 		4B19128B545BED76FA0DF72B960B92AB /* KFXHardwareReporter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KFXHardwareReporter.m; sourceTree = "<group>"; };
 		5499D8533136D60ABE7F89918AFDE43A /* KFXLocalSystemReporter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KFXLocalSystemReporter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B62DDAF1EDA2041005C1206 /* ExternalSources.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ExternalSources.md; sourceTree = "<group>"; };
-		5B62DDB11EDA2226005C1206 /* License.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = License.md; sourceTree = "<group>"; };
+		5B62DDAF1EDA2041005C1206 /* ExternalSources.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = ExternalSources.md; path = "../Example/Pods/Target Support Files/KFXLocalSystemReporter/ExternalSources.md"; sourceTree = "<group>"; };
+		5B62DDB11EDA2226005C1206 /* License.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = License.md; path = "../Example/Pods/Target Support Files/KFXLocalSystemReporter/License.md"; sourceTree = "<group>"; };
 		5EFBF6E2A7781DBACBA9732A18B003F2 /* Pods-KFXLocalSystemReporter_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KFXLocalSystemReporter_Example-resources.sh"; sourceTree = "<group>"; };
 		9250F79E260732EBBAE773D4AF08AA4A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -115,8 +114,6 @@
 				3C193FB54DD8620CAD58D56858258F09 /* KFXLocalSystemReporter-dummy.m */,
 				0969C5DAC863AD77CBFEC5DA58C1FEB9 /* KFXLocalSystemReporter-prefix.pch */,
 				B9220910E190CB60478FD6548B9FAF50 /* KFXLocalSystemReporter-umbrella.h */,
-				5B62DDAF1EDA2041005C1206 /* ExternalSources.md */,
-				5B62DDB11EDA2226005C1206 /* License.md */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/KFXLocalSystemReporter";
@@ -128,6 +125,15 @@
 				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		5B62DDB51EDA2722005C1206 /* License */ = {
+			isa = PBXGroup;
+			children = (
+				5B62DDAF1EDA2041005C1206 /* ExternalSources.md */,
+				5B62DDB11EDA2226005C1206 /* License.md */,
+			);
+			name = License;
 			sourceTree = "<group>";
 		};
 		5C46BCA7F729A44C00806C0CB7ED3439 /* KFXLocalSystemReporter */ = {
@@ -172,6 +178,7 @@
 		908ABEF8A561E8C19183D06C98232024 /* KFXLocalSystemReporter */ = {
 			isa = PBXGroup;
 			children = (
+				5B62DDB51EDA2722005C1206 /* License */,
 				D626612D218B6F8FA464125F5512EEB0 /* Classes */,
 			);
 			path = KFXLocalSystemReporter;
@@ -366,7 +373,6 @@
 				5B62DDB21EDA2226005C1206 /* License.md in Sources */,
 				4B6D126564F585302362B3B4DAE7DCA6 /* KFXLocalSystemReporter-dummy.m in Sources */,
 				2090BE2C9D03FD277BE33B5003EB0FB9 /* KFXSoftwareReporter.m in Sources */,
-				5B62DDB01EDA2041005C1206 /* ExternalSources.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

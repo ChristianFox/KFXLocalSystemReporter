@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5B62DDB41EDA22D7005C1206 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 5B62DDB31EDA22D7005C1206 /* CHANGELOG.md */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -396,7 +395,6 @@
 				6003F59E195388D20070C39A /* KFXAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* KFXViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				5B62DDB41EDA22D7005C1206 /* CHANGELOG.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
