@@ -16,11 +16,13 @@
 
 #pragma mark - Unit Tests?
 +(BOOL)isPerformingUnitTests{
-#ifdef USE_XCTEST
-    return YES;
-#else
-    return NO;
-#endif
+    return (NSClassFromString(@"XCTestProbe") != nil);
+
+//#ifdef USE_XCTEST
+//    return YES;
+//#else
+//    return NO;
+//#endif
 }
 
 +(BOOL)isRunningOnSimulator{

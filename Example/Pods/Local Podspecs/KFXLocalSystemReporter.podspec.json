@@ -1,16 +1,16 @@
 {
   "name": "KFXLocalSystemReporter",
-  "version": "0.2.0",
+  "version": "0.5.0",
   "summary": "A few classes for getting information about the device and software",
-  "description": "Included: KFXHardwareReporter, KFXSoftwareReporter, KFXDeviceActivityReporter",
-  "homepage": "https://kfxtech@bitbucket.org/kfxtech/kfxlocalsystemreporter_pod_private.git",
-  "license": "MIT",
+  "description": "Included: KFXHardwareReporter, KFXSoftwareReporter, KFXDeviceActivityReporter, KFXSystemReporter.\nDo things such as: get IP address, get hardware model, check if running on simulator, running unit tests, can device place a phone call etc",
+  "homepage": "https://kfxtech@bitbucket.org/kfx_pods/kfxlocalsystemreporter.git",
+  "license": "Commercial",
   "authors": {
     "Christian Fox": "christianfox890@icloud.com"
   },
   "source": {
-    "git": "https://kfxtech@bitbucket.org/kfxteam/kfxlocalsystemreporter_pod_private.git",
-    "tag": "0.2.0"
+    "git": "https://kfxtech@bitbucket.org/kfx_pods/kfxlocalsystemreporter.git",
+    "tag": "0.5.0"
   },
   "platforms": {
     "ios": "8.0"

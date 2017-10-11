@@ -1,6 +1,10 @@
 
 # KFXLocalSystemReporter Change Log #
 
+## v0.5.0 | Update hardware info + adds method to retrieve the ip address
+- Adds KFXSystemReporter
+- Updates hardware info
+
 ## v0.4.0 - switched to new bb repo
 
 ## v0.3.0
