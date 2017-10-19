@@ -3,6 +3,16 @@ use_frameworks!
 target 'KFXLocalSystemReporter_Example' do
     pod 'KFXLocalSystemReporter', :path => '../'
     
+    
+    ## Sources
+    ### If using private pods
+    source 'https://kfxtech@bitbucket.org/kfx_pods/kfxsharedspecs'
+    
+    pod 'KFXUtilities', '< 2.0'
+    
+    ### If using from trunk
+    source 'http://github.com/Cocoapods/Specs.git'
+
     target 'KFXLocalSystemReporter_Tests' do
         inherit! :search_paths
         

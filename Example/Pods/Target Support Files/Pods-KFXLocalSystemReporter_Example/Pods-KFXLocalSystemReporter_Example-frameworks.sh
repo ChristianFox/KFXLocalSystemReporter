@@ -89,10 +89,14 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/KFXAdditions/KFXAdditions.framework"
   install_framework "$BUILT_PRODUCTS_DIR/KFXLocalSystemReporter/KFXLocalSystemReporter.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/KFXUtilities/KFXUtilities.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/KFXAdditions/KFXAdditions.framework"
   install_framework "$BUILT_PRODUCTS_DIR/KFXLocalSystemReporter/KFXLocalSystemReporter.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/KFXUtilities/KFXUtilities.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

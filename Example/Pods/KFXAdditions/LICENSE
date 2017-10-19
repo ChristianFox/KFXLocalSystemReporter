@@ -1,0 +1,29 @@
+Copyright © 2016-2017 Christian Fox
+All Rights Reserved
+Contact Email: christianfox@kfxtech.com
+
+Terms and Conditions for KFXAdditions
+
+Unauthorized copying or modification of this file is strictly prohibited without the express permission of Christian Fox
+
+Throughout the rest of the following terms and conditions:
+- 'Library' shall be defined as all source codes, object codes, link libraries, utility programs, project files, scripts related to the library named above that this file is a part of, but excluding any code from external sources as detailed in the ExternalSources.md file.
+- 'Owner' shall be defined as Christian Fox,
+- 'Client' shall be defined as the person or company that has hired Christian Fox to create software,
+- 'Licensee' shall be defined as the person or company that has been granted a licence to use the Library,
+- 'Software' shall be defined as the software Christian Fox was hired to create.
+
+By including this file in the Software, the Owner grants the Client a license to use the Library in the Software only. This license shall be considered perpetual, worldwide and non-transferrable.
+The Library shall remain the intellectual property of the Owner at all times.
+The Library is provided "as is", without warranty of any kind, express or implied. Under no circumstances will the Owner of the Library be liable for any incidental, consequential, or indirect damages including but not limited to lost or damaged data, revenue loss, economic loss, or commercial loss arising from usage of the Library.
+
+The Licensee may:
+- Retain the Library as part of the Software source code
+- Include a copy of the Library in a copy of the Software source code
+- Use any code from the Library in the Software
+
+The Licensee may not:
+- Include any part of the Library in any other software without the express permission of the Owner.
+- Repackage, distribute, disassemble, decompile or reverse engineer any part of the Library without the express permission of the Owner.
+- Alter or remove of any notices in or on the Library or within the documentation included within the Library.
+- Disclose of any source codes pertaining to the Library to any additional parties not included in this agreement.

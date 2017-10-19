@@ -141,16 +141,73 @@
 }
 
 // https://github.com/erichoracek/UIDevice-Hardware/blob/master/UIDevice-Hardware.h
-+ (UIDeviceFamily) deviceFamily
-{
++(KFXDeviceFamily)deviceFamily {
     NSString *modelIdentifier = [self hardwareString];
-    if ([modelIdentifier hasPrefix:@"iPhone"]) return UIDeviceFamilyiPhone;
-    if ([modelIdentifier hasPrefix:@"iPod"]) return UIDeviceFamilyiPod;
-    if ([modelIdentifier hasPrefix:@"iPad"]) return UIDeviceFamilyiPad;
-    if ([modelIdentifier hasPrefix:@"AppleTV"]) return UIDeviceFamilyAppleTV;
-    return UIDeviceFamilyUnknown;
+    if ([modelIdentifier hasPrefix:@"iPhone"]) return KFXDeviceFamilyiPhone;
+    if ([modelIdentifier hasPrefix:@"iPod"]) return KFXDeviceFamilyiPod;
+    if ([modelIdentifier hasPrefix:@"iPad"]) return KFXDeviceFamilyiPad;
+    if ([modelIdentifier hasPrefix:@"AppleTV"]) return KFXDeviceFamilyAppleTV;
+    if ([modelIdentifier hasPrefix:@"Watch"]) return KFXDeviceFamilyAppleWatch;
+    return KFXDeviceFamilyUndefined;
 }
 
++(KFXDeviceScreenSize)deviceScreenSizeType{
+    
+    KFXDeviceScreenSize type = KFXDeviceScreenSizeUndefined;
+    CGSize size = [UIScreen mainScreen].bounds.size;
+    KFXDeviceFamily family = [self deviceFamily];
+    switch (family  ) {
+        case KFXDeviceFamilyiPhone:{
+            if (dequal(size.width, kiPhoneOriginalScreenSize.width) && dequal(size.height, kiPhoneOriginalScreenSize.height)) {
+                type = KFXDeviceScreenSizeiPhoneOriginal;
+            }else if (dequal(size.width, kiPhoneSmallScreenSize.width) && dequal(size.height, kiPhoneSmallScreenSize.height)) {
+                type = KFXDeviceScreenSizeiPhoneSmall;
+            }else if (dequal(size.width, kiPhoneRegularScreenSize.width) && dequal(size.height, kiPhoneRegularScreenSize.height)) {
+                type = KFXDeviceScreenSizeiPhoneRegular;
+            }else if (dequal(size.width, kiPhonePlusScreenSize.width) && dequal(size.height, kiPhonePlusScreenSize.height)) {
+                type = KFXDeviceScreenSizeiPhonePlus;
+            }else if (dequal(size.width, kiPhoneXScreenSize.width) && dequal(size.height, kiPhoneXScreenSize.height)) {
+                type = KFXDeviceScreenSizeiPhoneX;
+            }
+            break;
+        }
+        case KFXDeviceFamilyiPad:{
+            if (dequal(size.width, kiPadMiniScreenSize.width) && dequal(size.height, kiPadMiniScreenSize.height)) {
+                type = KFXDeviceScreenSizeiPadMini;
+            }else if (dequal(size.width, kiPadRegularScreenSize.width) && dequal(size.height, kiPadRegularScreenSize.height)) {
+                type = KFXDeviceScreenSizeiPadRegular;
+            }else if (dequal(size.width, kiPadPro9InchScreenSize.width) && dequal(size.height, kiPadPro9InchScreenSize.height)) {
+                type = KFXDeviceScreenSizeiPadPro9Inch;
+            }else if (dequal(size.width, kiPadPro10InchScreenSize.width) && dequal(size.height, kiPadPro10InchScreenSize.height)) {
+                type = KFXDeviceScreenSizeiPadPro10Inch;
+            }else if (dequal(size.width, kiPadPro12InchScreenSize.width) && dequal(size.height, kiPadPro12InchScreenSize.height)) {
+                type = KFXDeviceScreenSizeiPadPro12Inch;
+            }
+            break;
+        }
+        case KFXDeviceFamilyAppleWatch:{
+            if (dequal(size.width, kAppleWatch38mmScreenSize.width) && dequal(size.height, kAppleWatch38mmScreenSize.height)) {
+                type = KFXDeviceScreenSizeAppleWatch38mm;
+            }else if (dequal(size.width, kAppleWatch42mmScreenSize.width) && dequal(size.height, kAppleWatch42mmScreenSize.height)) {
+                type = KFXDeviceScreenSizeAppleWatch42mm;
+            }
+            break;
+        }
+        case KFXDeviceFamilyiPod:{
+            type = KFXDeviceScreenSizeUndefined;
+            break;
+        }
+        case  KFXDeviceFamilyAppleTV:{
+            type = KFXDeviceScreenSizeUndefined;
+            break;
+        }
+        default:
+            NSAssert(NO,@"Hit default case of a switch statement. %s. Value is : %ld",__PRETTY_FUNCTION__, (long)KFXDeviceFamilyString(family));
+            
+            break;
+    }
+    return type;
+}
 
 
 #pragma mark - Device Capabilities

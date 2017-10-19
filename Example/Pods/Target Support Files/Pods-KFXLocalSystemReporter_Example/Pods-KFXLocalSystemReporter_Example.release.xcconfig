@@ -1,8 +1,8 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/KFXLocalSystemReporter"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/KFXAdditions" "$PODS_CONFIGURATION_BUILD_DIR/KFXLocalSystemReporter" "$PODS_CONFIGURATION_BUILD_DIR/KFXUtilities"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/KFXLocalSystemReporter/KFXLocalSystemReporter.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "KFXLocalSystemReporter"
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/KFXAdditions/KFXAdditions.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/KFXLocalSystemReporter/KFXLocalSystemReporter.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/KFXUtilities/KFXUtilities.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "KFXAdditions" -framework "KFXLocalSystemReporter" -framework "KFXUtilities"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

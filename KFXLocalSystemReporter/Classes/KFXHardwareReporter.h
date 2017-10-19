@@ -9,24 +9,16 @@
  ************************************/
 
 
-
-// https://github.com/erichoracek/UIDevice-Hardware/blob/master/UIDevice-Hardware.h
-typedef NS_ENUM(NSUInteger, UIDeviceFamily) {
-    UIDeviceFamilyiPhone,
-    UIDeviceFamilyiPod,
-    UIDeviceFamilyiPad,
-    UIDeviceFamilyAppleTV,
-    UIDeviceFamilyUnknown,
-};
-
-
 #import <Foundation/Foundation.h>
+#import <KFXUtilities/KFXUtilities.h>
 
 @interface KFXHardwareReporter : NSObject
 
 +(NSString*)hardwareDescription;
 +(NSString*)hardwareString;
 +(NSString*)deviceType;
++(KFXDeviceFamily)deviceFamily;
++(KFXDeviceScreenSize)deviceScreenSizeType;
 
 // Device capabilities
 +(BOOL)canDevicePlaceAPhoneCall;

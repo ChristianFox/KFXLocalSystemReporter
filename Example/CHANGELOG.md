@@ -1,6 +1,8 @@
 
 # KFXLocalSystemReporter Change Log #
 
+### v0.6.0 | Adds +deviceFamily & +deviceScreenSizeType methods to KFXHardwareReporter
+
 ## v0.5.0 | Update hardware info + adds method to retrieve the ip address
 - Adds KFXSystemReporter
 - Updates hardware info
