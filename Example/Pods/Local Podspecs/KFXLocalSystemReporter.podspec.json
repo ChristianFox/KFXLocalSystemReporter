@@ -1,6 +1,6 @@
 {
   "name": "KFXLocalSystemReporter",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "summary": "A few classes for getting information about the device and software",
   "description": "Included: KFXHardwareReporter, KFXSoftwareReporter, KFXDeviceActivityReporter, KFXSystemReporter.\nDo things such as: get IP address, get hardware model, check if running on simulator, running unit tests, can device place a phone call etc",
   "homepage": "https://kfxtech@bitbucket.org/kfx_pods/kfxlocalsystemreporter.git",
@@ -10,15 +10,18 @@
   },
   "source": {
     "git": "https://kfxtech@bitbucket.org/kfx_pods/kfxlocalsystemreporter.git",
-    "tag": "0.6.0"
+    "tag": "0.7.0"
   },
   "platforms": {
     "ios": "8.0"
   },
   "source_files": "KFXLocalSystemReporter/Classes/**/*",
   "dependencies": {
+    "KFXCore": [
+
+    ],
     "KFXUtilities": [
-      "< 2.0"
+
     ]
   }
 }

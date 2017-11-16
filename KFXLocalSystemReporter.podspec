@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "KFXLocalSystemReporter"
-  s.version          = "0.6.0"
+  s.version          = "0.7.0"
   s.summary          = "A few classes for getting information about the device and software"
   s.description      = <<-DESC
 Included: KFXHardwareReporter, KFXSoftwareReporter, KFXDeviceActivityReporter, KFXSystemReporter.
@@ -15,6 +15,7 @@ Do things such as: get IP address, get hardware model, check if running on simul
   s.source           = { :git => "https://kfxtech@bitbucket.org/kfx_pods/kfxlocalsystemreporter.git", :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.source_files = 'KFXLocalSystemReporter/Classes/**/*'
-  s.dependency 'KFXUtilities', '< 2.0'
+  s.dependency 'KFXCore'
+  s.dependency 'KFXUtilities'
 
 end

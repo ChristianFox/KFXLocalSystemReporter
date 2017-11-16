@@ -17,12 +17,20 @@
 #define dequalzero(a) (fabs(a) < DBL_EPSILON)
 
 
-#import <Foundation/Foundation.h>
+#define CLAMP(x, low, high) ({\
+__typeof__(x) __x = (x); \
+__typeof__(low) __low = (low);\
+__typeof__(high) __high = (high);\
+__x > __high ? __high : (__x < __low ? __low : __x);\
+})
+
+@import Foundation;
+@import CoreGraphics;
 
 @interface KFXMaths : NSObject
 
 //-----------------------------------------------------------
-#pragma mark - Random Numbers
+#pragma mark Random Numbers
 //-----------------------------------------------------------
 
 /**
@@ -48,6 +56,8 @@ float randomFloatWithMinAndMax(float min, float max);
  *  *If max is less then min then it is assumed to be a mistake and they are switched around.
  **/
 double randomDoubleWithMinAndMax(double min, double max);
+
+
 
 
 @end

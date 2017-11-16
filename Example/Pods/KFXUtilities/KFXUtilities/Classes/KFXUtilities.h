@@ -1,16 +1,21 @@
-//
-//  KFXUtilities.h
-//  KFXUtilities
-//
-//  Created by Eyeye on 07/10/2017.
-//
+/********************************
+ *
+ * Copyright © 2016-2017 Christian Fox
+ * All Rights Reserved
+ * Full licence details can be found in the file 'LICENSE' or in the Pods-{yourProjectName}-acknowledgements.markdown
+ *
+ * This file is included with KFXUtilities
+ *
+ ************************************/
+
 
 #ifndef KFXUtilities_h
 #define KFXUtilities_h
 
-#import <KFXUtilities/KFXCommonConstants.h>
-#import <KFXUtilities/KFXCommonDefinitions.h>
 #import <KFXUtilities/KFXMaths.h>
 #import <KFXUtilities/KFXGeometry.h>
+#import <KFXUtilities/KFXFileHelper.h>
+#import <KFXUtilities/KFXMailHelper.h>
+
 
 #endif /* KFXUtilities_h */

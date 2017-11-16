@@ -10,7 +10,7 @@
 
 
 #import <Foundation/Foundation.h>
-#import <KFXUtilities/KFXUtilities.h>
+#import <KFXCore/KFXCore.h>
 
 @interface KFXHardwareReporter : NSObject
 

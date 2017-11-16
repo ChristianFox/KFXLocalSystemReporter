@@ -14,11 +14,18 @@
 
 @implementation KFXFileHelper
 
+//--------------------------------------------------------
+#pragma mark Initilisers
+//--------------------------------------------------------
 +(instancetype)fileHelper{
     KFXFileHelper *helper = [[self alloc]init];
     return helper;
 }
 
+
+//--------------------------------------------------------
+#pragma mark MIME Type
+//--------------------------------------------------------
 -(NSString *)kfx_mimeTypeForFilePath:(NSString *)filePath{
     CFStringRef fileExtension = (__bridge CFStringRef)[filePath pathExtension];
     CFStringRef UTI = UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, fileExtension, NULL);

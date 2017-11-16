@@ -8,7 +8,8 @@ target 'KFXLocalSystemReporter_Example' do
     ### If using private pods
     source 'https://kfxtech@bitbucket.org/kfx_pods/kfxsharedspecs'
     
-    pod 'KFXUtilities', '< 2.0'
+    pod 'KFXCore'
+    pod 'KFXUtilities'
     
     ### If using from trunk
     source 'http://github.com/Cocoapods/Specs.git'

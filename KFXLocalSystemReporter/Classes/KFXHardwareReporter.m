@@ -13,6 +13,8 @@
 #include <sys/sysctl.h>
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import <CoreTelephony/CTCarrier.h>
+#import <KFXUtilities/KFXMaths.h>
+
 
 @implementation KFXHardwareReporter
 
@@ -143,6 +145,10 @@
 // https://github.com/erichoracek/UIDevice-Hardware/blob/master/UIDevice-Hardware.h
 +(KFXDeviceFamily)deviceFamily {
     NSString *modelIdentifier = [self hardwareString];
+    if ([modelIdentifier hasSuffix:@"86"] || [modelIdentifier isEqual:@"x86_64"]) {
+        BOOL smallerScreen = ([[UIScreen mainScreen] bounds].size.width < 768.0);
+        return (smallerScreen ? KFXDeviceFamilyiPhone : KFXDeviceFamilyiPad);
+    }
     if ([modelIdentifier hasPrefix:@"iPhone"]) return KFXDeviceFamilyiPhone;
     if ([modelIdentifier hasPrefix:@"iPod"]) return KFXDeviceFamilyiPod;
     if ([modelIdentifier hasPrefix:@"iPad"]) return KFXDeviceFamilyiPad;
