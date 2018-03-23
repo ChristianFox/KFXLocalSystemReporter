@@ -1,6 +1,5 @@
 # KFXLocalSystemReporter
 
-[![CI Status](http://img.shields.io/travis/Christian Fox/KFXLocalSystemReporter.svg?style=flat)](https://travis-ci.org/Christian Fox/KFXLocalSystemReporter)
 [![Version](https://img.shields.io/cocoapods/v/KFXLocalSystemReporter.svg?style=flat)](http://cocoapods.org/pods/KFXLocalSystemReporter)
 [![License](https://img.shields.io/cocoapods/l/KFXLocalSystemReporter.svg?style=flat)](http://cocoapods.org/pods/KFXLocalSystemReporter)
 [![Platform](https://img.shields.io/cocoapods/p/KFXLocalSystemReporter.svg?style=flat)](http://cocoapods.org/pods/KFXLocalSystemReporter)

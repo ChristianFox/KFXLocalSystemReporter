@@ -1,6 +1,8 @@
 
 # KFXLocalSystemReporter Change Log #
 
+### 0.8.0 | - Updates Licence, ReadMe
+
 ### 0.7.0 | Adds KFXCore & Updates KFXUtilities
 
 ### v0.6.0 | Adds +deviceFamily & +deviceScreenSizeType methods to KFXHardwareReporter
