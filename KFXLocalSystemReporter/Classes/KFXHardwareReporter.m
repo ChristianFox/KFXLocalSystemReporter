@@ -164,37 +164,37 @@
     KFXDeviceFamily family = [self deviceFamily];
     switch (family  ) {
         case KFXDeviceFamilyiPhone:{
-            if (dequal(size.width, kiPhoneOriginalScreenSize.width) && dequal(size.height, kiPhoneOriginalScreenSize.height)) {
+            if (dequal(size.width,KFXCOREiPhoneOriginalScreenSize.width) && dequal(size.height, KFXCOREiPhoneOriginalScreenSize.height)) {
                 type = KFXDeviceScreenSizeiPhoneOriginal;
-            }else if (dequal(size.width, kiPhoneSmallScreenSize.width) && dequal(size.height, kiPhoneSmallScreenSize.height)) {
+            }else if (dequal(size.width, KFXCOREiPhoneSmallScreenSize.width) && dequal(size.height, KFXCOREiPhoneSmallScreenSize.height)) {
                 type = KFXDeviceScreenSizeiPhoneSmall;
-            }else if (dequal(size.width, kiPhoneRegularScreenSize.width) && dequal(size.height, kiPhoneRegularScreenSize.height)) {
+            }else if (dequal(size.width, KFXCOREiPhoneRegularScreenSize.width) && dequal(size.height, KFXCOREiPhoneRegularScreenSize.height)) {
                 type = KFXDeviceScreenSizeiPhoneRegular;
-            }else if (dequal(size.width, kiPhonePlusScreenSize.width) && dequal(size.height, kiPhonePlusScreenSize.height)) {
+            }else if (dequal(size.width, KFXCOREiPhonePlusScreenSize.width) && dequal(size.height, KFXCOREiPhonePlusScreenSize.height)) {
                 type = KFXDeviceScreenSizeiPhonePlus;
-            }else if (dequal(size.width, kiPhoneXScreenSize.width) && dequal(size.height, kiPhoneXScreenSize.height)) {
+            }else if (dequal(size.width, KFXCOREiPhoneXScreenSize.width) && dequal(size.height, KFXCOREiPhoneXScreenSize.height)) {
                 type = KFXDeviceScreenSizeiPhoneX;
             }
             break;
         }
         case KFXDeviceFamilyiPad:{
-            if (dequal(size.width, kiPadMiniScreenSize.width) && dequal(size.height, kiPadMiniScreenSize.height)) {
+            if (dequal(size.width, KFXCOREiPadMiniScreenSize.width) && dequal(size.height, KFXCOREiPadMiniScreenSize.height)) {
                 type = KFXDeviceScreenSizeiPadMini;
-            }else if (dequal(size.width, kiPadRegularScreenSize.width) && dequal(size.height, kiPadRegularScreenSize.height)) {
+            }else if (dequal(size.width, KFXCOREiPadRegularScreenSize.width) && dequal(size.height, KFXCOREiPadRegularScreenSize.height)) {
                 type = KFXDeviceScreenSizeiPadRegular;
-            }else if (dequal(size.width, kiPadPro9InchScreenSize.width) && dequal(size.height, kiPadPro9InchScreenSize.height)) {
+            }else if (dequal(size.width, KFXCOREiPadPro9InchScreenSize.width) && dequal(size.height, KFXCOREiPadPro9InchScreenSize.height)) {
                 type = KFXDeviceScreenSizeiPadPro9Inch;
-            }else if (dequal(size.width, kiPadPro10InchScreenSize.width) && dequal(size.height, kiPadPro10InchScreenSize.height)) {
+            }else if (dequal(size.width, KFXCOREiPadPro10InchScreenSize.width) && dequal(size.height, KFXCOREiPadPro10InchScreenSize.height)) {
                 type = KFXDeviceScreenSizeiPadPro10Inch;
-            }else if (dequal(size.width, kiPadPro12InchScreenSize.width) && dequal(size.height, kiPadPro12InchScreenSize.height)) {
+            }else if (dequal(size.width, KFXCOREiPadPro12InchScreenSize.width) && dequal(size.height, KFXCOREiPadPro12InchScreenSize.height)) {
                 type = KFXDeviceScreenSizeiPadPro12Inch;
             }
             break;
         }
         case KFXDeviceFamilyAppleWatch:{
-            if (dequal(size.width, kAppleWatch38mmScreenSize.width) && dequal(size.height, kAppleWatch38mmScreenSize.height)) {
+            if (dequal(size.width, KFXCOREAppleWatch38mmScreenSize.width) && dequal(size.height, KFXCOREAppleWatch38mmScreenSize.height)) {
                 type = KFXDeviceScreenSizeAppleWatch38mm;
-            }else if (dequal(size.width, kAppleWatch42mmScreenSize.width) && dequal(size.height, kAppleWatch42mmScreenSize.height)) {
+            }else if (dequal(size.width, KFXCOREAppleWatch42mmScreenSize.width) && dequal(size.height, KFXCOREAppleWatch42mmScreenSize.height)) {
                 type = KFXDeviceScreenSizeAppleWatch42mm;
             }
             break;

@@ -1,8 +1,9 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/KFXCore" "$PODS_CONFIGURATION_BUILD_DIR/KFXLocalSystemReporter" "$PODS_CONFIGURATION_BUILD_DIR/KFXUtilities"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/KFXCore/KFXCore.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/KFXLocalSystemReporter/KFXLocalSystemReporter.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/KFXUtilities/KFXUtilities.framework/Headers"
-PODS_BUILD_DIR = $BUILD_DIR
-PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/KFXCore" "${PODS_ROOT}/Headers/Public/KFXLocalSystemReporter" "${PODS_ROOT}/Headers/Public/KFXUtilities"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/KFXCore" "${PODS_CONFIGURATION_BUILD_DIR}/KFXLocalSystemReporter" "${PODS_CONFIGURATION_BUILD_DIR}/KFXUtilities"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/KFXCore" -isystem "${PODS_ROOT}/Headers/Public/KFXLocalSystemReporter" -isystem "${PODS_ROOT}/Headers/Public/KFXUtilities"
+OTHER_LDFLAGS = $(inherited) -ObjC
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
 PODS_ROOT = ${SRCROOT}/Pods

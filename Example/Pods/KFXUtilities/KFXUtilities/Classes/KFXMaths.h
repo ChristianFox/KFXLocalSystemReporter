@@ -1,8 +1,8 @@
 /********************************
  *
- * Copyright © 2016-2017 Christian Fox
- * All Rights Reserved
- * Full licence details can be found in the file 'LICENSE' or in the Pods-{yourProjectName}-acknowledgements.markdown
+ * Copyright © 2016-2018 Christian Fox
+ *
+ * MIT Licence - Full licence details can be found in the file 'LICENSE' or in the Pods-{yourProjectName}-acknowledgements.markdown
  *
  * This file is included with KFXUtilities
  *
@@ -16,7 +16,9 @@
 #define dequal(a,b) (fabs((a) - (b)) < DBL_EPSILON)
 #define dequalzero(a) (fabs(a) < DBL_EPSILON)
 
-
+/*
+ * https://stackoverflow.com/a/14770282/4082459
+ */
 #define CLAMP(x, low, high) ({\
 __typeof__(x) __x = (x); \
 __typeof__(low) __low = (low);\
@@ -32,7 +34,6 @@ __x > __high ? __high : (__x < __low ? __low : __x);\
 //-----------------------------------------------------------
 #pragma mark Random Numbers
 //-----------------------------------------------------------
-
 /**
  *  Generates a random 32bit unsigned integer between the values specified.
  *  *If max is less then min then it is assumed to be a mistake and they are switched around.

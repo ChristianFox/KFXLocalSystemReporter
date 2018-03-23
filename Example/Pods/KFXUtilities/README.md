@@ -1,6 +1,5 @@
 # KFXUtilities
 
-[![CI Status](http://img.shields.io/travis/Christian Fox/KFXUtilities.svg?style=flat)](https://travis-ci.org/Christian Fox/KFXUtilities)
 [![Version](https://img.shields.io/cocoapods/v/KFXUtilities.svg?style=flat)](http://cocoapods.org/pods/KFXUtilities)
 [![License](https://img.shields.io/cocoapods/l/KFXUtilities.svg?style=flat)](http://cocoapods.org/pods/KFXUtilities)
 [![Platform](https://img.shields.io/cocoapods/p/KFXUtilities.svg?style=flat)](http://cocoapods.org/pods/KFXUtilities)
@@ -19,6 +18,8 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "KFXUtilities"
 ```
+## Overview
+A few utility classes
 
 ## Author
 

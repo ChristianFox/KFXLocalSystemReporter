@@ -1,19 +1,34 @@
 /********************************
  *
- * Copyright © 2016-2017 Christian Fox
- * All Rights Reserved
- * Full licence details can be found in the file 'LICENSE' or in the Pods-{yourProjectName}-acknowledgements.markdown
+ * KFXCore https://github.com/ChristianFox/KFXCore
+ *
+ * Copyright (c) 2016-2018 ChristianFox <christianfox@kfxtech.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
  *
  * This file is included with KFXCore
  *
  ************************************/
 
-
 @import Foundation;
 @import CoreGraphics;
 @class UIImage;
-
-
 
 //-----------------------------------
 // Directions
@@ -38,7 +53,6 @@ typedef NS_ENUM (NSInteger, KFXDirection) {
     KFXDirectionBottomRightToTopLeft
 };
 
-
 //-----------------------------------
 // Edge
 //-----------------------------------
@@ -49,7 +63,6 @@ typedef NS_ENUM (NSInteger, KFXEdge) {
     KFXEdgeDown,
     KFXEdgeLeft
 };
-
 
 //-----------------------------------
 // Device
@@ -78,7 +91,6 @@ typedef NS_ENUM(NSUInteger, KFXDeviceFamily) {
     KFXDeviceFamilyAppleTV,
     KFXDeviceFamilyAppleWatch,
 };
-
 
 
 //-----------------------------------
@@ -129,8 +141,6 @@ typedef void(^KFXUIImageResultBlock)(UIImage *_Nullable image, NSError*_Nullable
 
 
 
-
-
 @interface KFXCommonDefinitions : NSObject
 
 
@@ -142,10 +152,6 @@ NSString*_Nullable KFXDirectionString(KFXDirection direction);
 NSString*_Nullable KFXEdgeString(KFXEdge edge);
 NSString*_Nullable KFXDeviceScreenSizeString(KFXDeviceScreenSize screenSize);
 NSString*_Nullable KFXDeviceFamilyString(KFXDeviceFamily family);
-
-
-
-
 
 
 

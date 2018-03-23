@@ -1,6 +1,8 @@
 
 # KFXLocalSystemReporter Change Log #
 
+### 0.8.1 | Updates for updated pod
+
 ### 0.8.0 | - Updates Licence, ReadMe
 
 ### 0.7.0 | Adds KFXCore & Updates KFXUtilities

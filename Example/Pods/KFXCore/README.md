@@ -20,9 +20,24 @@ it, simply add the following line to your Podfile:
 pod 'KFXCore'
 ```
 
+## Overview
+#### KFXCommonConstants:
+- distance constants (KM to Miles, Degrees to Radians, Feet per mile etc)
+- mass constants (KG to Pounds and vice versa)
+- time constants (Secs per min, min per hour etc)
+- Apple device screen sizes (watch, iphone, ipad)
+- UIKit dimensions (status bar height, tab bar height etc)
+- various keys
+
+#### KFXCommonDefinitions
+- Enums: direction, cardinal direction, edge, screen size, device family
+- Blocks: happenings, objects, primitives
+- Enum to Strings functions
+
+
 ## Author
 
-ChristianFox, christianfox890@icloud.com
+ChristianFox, christianfox@kfxtech.com
 
 ## License
 
