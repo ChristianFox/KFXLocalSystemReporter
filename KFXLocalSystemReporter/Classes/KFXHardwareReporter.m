@@ -172,15 +172,15 @@
                 type = KFXDeviceScreenSizeiPhoneRegular;
             }else if (dequal(size.width, KFXCOREiPhonePlusScreenSize.width) && dequal(size.height, KFXCOREiPhonePlusScreenSize.height)) {
                 type = KFXDeviceScreenSizeiPhonePlus;
-            }else if (dequal(size.width, KFXCOREiPhoneXScreenSize.width) && dequal(size.height, KFXCOREiPhoneXScreenSize.height)) {
-                type = KFXDeviceScreenSizeiPhoneX;
+            }else if (dequal(size.width, KFXCOREiPhoneXRegularScreenSize.width) && dequal(size.height, KFXCOREiPhoneXRegularScreenSize.height)) {
+                type = KFXDeviceScreenSizeiPhoneXRegular;
+            }else if (dequal(size.width, KFXCOREiPhoneXLargeScreenSize.width) && dequal(size.height, KFXCOREiPhoneXLargeScreenSize.height)) {
+                type = KFXDeviceScreenSizeiPhoneXLarge;
             }
             break;
         }
         case KFXDeviceFamilyiPad:{
-            if (dequal(size.width, KFXCOREiPadMiniScreenSize.width) && dequal(size.height, KFXCOREiPadMiniScreenSize.height)) {
-                type = KFXDeviceScreenSizeiPadMini;
-            }else if (dequal(size.width, KFXCOREiPadRegularScreenSize.width) && dequal(size.height, KFXCOREiPadRegularScreenSize.height)) {
+            if (dequal(size.width, KFXCOREiPadRegularScreenSize.width) && dequal(size.height, KFXCOREiPadRegularScreenSize.height)) {
                 type = KFXDeviceScreenSizeiPadRegular;
             }else if (dequal(size.width, KFXCOREiPadPro9InchScreenSize.width) && dequal(size.height, KFXCOREiPadPro9InchScreenSize.height)) {
                 type = KFXDeviceScreenSizeiPadPro9Inch;
@@ -194,8 +194,12 @@
         case KFXDeviceFamilyAppleWatch:{
             if (dequal(size.width, KFXCOREAppleWatch38mmScreenSize.width) && dequal(size.height, KFXCOREAppleWatch38mmScreenSize.height)) {
                 type = KFXDeviceScreenSizeAppleWatch38mm;
+            }else if (dequal(size.width, KFXCOREAppleWatch40mmScreenSize.width) && dequal(size.height, KFXCOREAppleWatch40mmScreenSize.height)) {
+                type = KFXDeviceScreenSizeAppleWatch40mm;
             }else if (dequal(size.width, KFXCOREAppleWatch42mmScreenSize.width) && dequal(size.height, KFXCOREAppleWatch42mmScreenSize.height)) {
                 type = KFXDeviceScreenSizeAppleWatch42mm;
+            }else if (dequal(size.width, KFXCOREAppleWatch44mmScreenSize.width) && dequal(size.height, KFXCOREAppleWatch44mmScreenSize.height)) {
+                type = KFXDeviceScreenSizeAppleWatch44mm;
             }
             break;
         }
@@ -205,6 +209,75 @@
         }
         case  KFXDeviceFamilyAppleTV:{
             type = KFXDeviceScreenSizeUndefined;
+            break;
+        }
+        default:
+            NSAssert(NO,@"Hit default case of a switch statement. %s. Value is : %ld",__PRETTY_FUNCTION__, (long)KFXDeviceFamilyString(family));
+            
+            break;
+    }
+    return type;
+}
+
+
++(KFXDeviceResolution)deviceResolutionType{
+    
+    KFXDeviceResolution type = KFXDeviceResolutionUndefined;
+    CGSize size = [UIScreen mainScreen].nativeBounds.size;
+    KFXDeviceFamily family = [self deviceFamily];
+    switch (family  ) {
+        case KFXDeviceFamilyiPhone:{
+            if (dequal(size.width,KFXCOREiPhoneOriginalNonRetinaResolution.width) && dequal(size.height, KFXCOREiPhoneOriginalNonRetinaResolution.height)) {
+                type = KFXDeviceResolutioniPhoneOriginalNonRetina;
+            }else if (dequal(size.width,KFXCOREiPhoneOriginalRetinaResolution.width) && dequal(size.height, KFXCOREiPhoneOriginalRetinaResolution.height)) {
+                type = KFXDeviceResolutioniPhoneOriginalRetina;
+            }else if (dequal(size.width, KFXCOREiPhoneSmallResolution.width) && dequal(size.height, KFXCOREiPhoneSmallResolution.height)) {
+                type = KFXDeviceResolutioniPhoneSmall;
+            }else if (dequal(size.width, KFXCOREiPhoneRegularResolution.width) && dequal(size.height, KFXCOREiPhoneRegularResolution.height)) {
+                type = KFXDeviceResolutioniPhoneRegular;
+            }else if (dequal(size.width, KFXCOREiPhonePlusPhysicalResolution.width) && dequal(size.height, KFXCOREiPhonePlusPhysicalResolution.height)) {
+                type = KFXDeviceResolutioniPhonePlus;
+            }else if (dequal(size.width, KFXCOREiPhoneXResolution.width) && dequal(size.height, KFXCOREiPhoneXResolution.height)) {
+                type = KFXDeviceResolutioniPhoneX;
+            }else if (dequal(size.width, KFXCOREiPhoneXrResolution.width) && dequal(size.height, KFXCOREiPhoneXrResolution.height)) {
+                type = KFXDeviceResolutioniPhoneXr;
+            }else if (dequal(size.width, KFXCOREiPhoneXMaxResolution.width) && dequal(size.height, KFXCOREiPhoneXMaxResolution.height)) {
+                type = KFXDeviceResolutioniPhoneXMax;
+            }
+            break;
+        }
+        case KFXDeviceFamilyiPad:{
+            if (dequal(size.width, KFXCOREiPadOriginalResolution.width) && dequal(size.height, KFXCOREiPadOriginalResolution.height)) {
+                type = KFXDeviceResolutioniPadOriginal;
+            }else if (dequal(size.width, KFXCOREiPadRegularResolution.width) && dequal(size.height, KFXCOREiPadRegularResolution.height)) {
+                type = KFXDeviceResolutioniPadRegular;
+            }else if (dequal(size.width, KFXCOREiPadPro9InchResolution.width) && dequal(size.height, KFXCOREiPadPro9InchResolution.height)) {
+                type = KFXDeviceResolutioniPadPro9Inch;
+            }else if (dequal(size.width, KFXCOREiPadPro10InchResolution.width) && dequal(size.height, KFXCOREiPadPro10InchResolution.height)) {
+                type = KFXDeviceResolutioniPadPro10Inch;
+            }else if (dequal(size.width, KFXCOREiPadPro12InchResolution.width) && dequal(size.height, KFXCOREiPadPro12InchResolution.height)) {
+                type = KFXDeviceResolutioniPadPro12Inch;
+            }
+            break;
+        }
+        case KFXDeviceFamilyAppleWatch:{
+            if (dequal(size.width, KFXCOREAppleWatch38mmResolution.width) && dequal(size.height, KFXCOREAppleWatch38mmResolution.height)) {
+                type = KFXDeviceResolutionAppleWatch38mm;
+            }else if (dequal(size.width, KFXCOREAppleWatch40mmResolution.width) && dequal(size.height, KFXCOREAppleWatch40mmResolution.height)) {
+                type = KFXDeviceResolutionAppleWatch40mm;
+            }else if (dequal(size.width, KFXCOREAppleWatch42mmResolution.width) && dequal(size.height, KFXCOREAppleWatch42mmResolution.height)) {
+                type = KFXDeviceResolutionAppleWatch42mm;
+            }else if (dequal(size.width, KFXCOREAppleWatch44mmResolution.width) && dequal(size.height, KFXCOREAppleWatch44mmResolution.height)) {
+                type = KFXDeviceResolutionAppleWatch44mm;
+            }
+            break;
+        }
+        case KFXDeviceFamilyiPod:{
+            type = KFXDeviceResolutionUndefined;
+            break;
+        }
+        case  KFXDeviceFamilyAppleTV:{
+            type = KFXDeviceResolutionUndefined;
             break;
         }
         default:

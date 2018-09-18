@@ -73,15 +73,39 @@ typedef NS_ENUM (NSInteger, KFXDeviceScreenSize){
     KFXDeviceScreenSizeiPhoneSmall,
     KFXDeviceScreenSizeiPhoneRegular,
     KFXDeviceScreenSizeiPhonePlus,
-    KFXDeviceScreenSizeiPhoneX,
-    KFXDeviceScreenSizeiPadMini,
+    KFXDeviceScreenSizeiPhoneXRegular,
+    KFXDeviceScreenSizeiPhoneXLarge,
     KFXDeviceScreenSizeiPadRegular,
     KFXDeviceScreenSizeiPadPro9Inch,
     KFXDeviceScreenSizeiPadPro10Inch,
     KFXDeviceScreenSizeiPadPro12Inch,
     KFXDeviceScreenSizeAppleWatch38mm,
-    KFXDeviceScreenSizeAppleWatch42mm
+    KFXDeviceScreenSizeAppleWatch40mm,
+    KFXDeviceScreenSizeAppleWatch42mm,
+    KFXDeviceScreenSizeAppleWatch44mm
 };
+
+typedef NS_ENUM (NSInteger, KFXDeviceResolution){
+    KFXDeviceResolutionUndefined = 0,
+    KFXDeviceResolutioniPhoneOriginalNonRetina,
+    KFXDeviceResolutioniPhoneOriginalRetina,
+    KFXDeviceResolutioniPhoneSmall,
+    KFXDeviceResolutioniPhoneRegular,
+    KFXDeviceResolutioniPhonePlus,
+    KFXDeviceResolutioniPhoneX,
+    KFXDeviceResolutioniPhoneXr,
+    KFXDeviceResolutioniPhoneXMax,
+    KFXDeviceResolutioniPadOriginal,
+    KFXDeviceResolutioniPadRegular,
+    KFXDeviceResolutioniPadPro9Inch,
+    KFXDeviceResolutioniPadPro10Inch,
+    KFXDeviceResolutioniPadPro12Inch,
+    KFXDeviceResolutionAppleWatch38mm,
+    KFXDeviceResolutionAppleWatch40mm,
+    KFXDeviceResolutionAppleWatch42mm,
+    KFXDeviceResolutionAppleWatch44mm
+};
+
 
 typedef NS_ENUM(NSUInteger, KFXDeviceFamily) {
     KFXDeviceFamilyUndefined = 0,
@@ -151,6 +175,7 @@ NSString*_Nullable KFXCardinalDirectionString(KFXCardinalDirection direction);
 NSString*_Nullable KFXDirectionString(KFXDirection direction);
 NSString*_Nullable KFXEdgeString(KFXEdge edge);
 NSString*_Nullable KFXDeviceScreenSizeString(KFXDeviceScreenSize screenSize);
+NSString*_Nullable KFXDeviceResolutionString(KFXDeviceResolution resolution);
 NSString*_Nullable KFXDeviceFamilyString(KFXDeviceFamily family);
 
 

@@ -1,6 +1,6 @@
 PODS:
-  - KFXCore (1.0.1)
-  - KFXLocalSystemReporter (0.8.0):
+  - KFXCore (2.0.0)
+  - KFXLocalSystemReporter (0.8.1):
     - KFXCore
     - KFXUtilities
   - KFXUtilities (2.2.0):
@@ -11,15 +11,20 @@ DEPENDENCIES:
   - KFXLocalSystemReporter (from `../`)
   - KFXUtilities
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - KFXCore
+    - KFXUtilities
+
 EXTERNAL SOURCES:
   KFXLocalSystemReporter:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  KFXCore: 28df8ab964505b6b0e55eafb361377e3ade33be8
-  KFXLocalSystemReporter: 6dfe7ef4f80e53e692690f35967774bb2a10bdda
+  KFXCore: 46a068aae8156a9b392d8e6116547c1d8aabc06b
+  KFXLocalSystemReporter: c7ed2b38aec1ce4ae637ce32dc81ec7f795e9fdd
   KFXUtilities: 15aacb5f684373570ca3020f917b0b653f8e4e95
 
 PODFILE CHECKSUM: 83667c934b7c0ce8e5feed4193242d188c230d38
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3

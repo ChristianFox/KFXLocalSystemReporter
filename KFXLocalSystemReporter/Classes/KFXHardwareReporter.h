@@ -19,6 +19,7 @@
 +(NSString*)deviceType;
 +(KFXDeviceFamily)deviceFamily;
 +(KFXDeviceScreenSize)deviceScreenSizeType;
++(KFXDeviceResolution)deviceResolutionType;
 
 // Device capabilities
 +(BOOL)canDevicePlaceAPhoneCall;

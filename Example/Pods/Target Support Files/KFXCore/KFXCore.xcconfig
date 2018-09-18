@@ -1,6 +1,6 @@
 CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/KFXCore
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/KFXCore" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/KFXCore" "${PODS_ROOT}/Headers/Public/KFXLocalSystemReporter" "${PODS_ROOT}/Headers/Public/KFXUtilities"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/KFXCore" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/KFXCore"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B911CCC20D10D3B00BDB8DF /* NOTES.md in Resources */ = {isa = PBXBuildFile; fileRef = 5B911CCB20D10D3B00BDB8DF /* NOTES.md */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -41,6 +42,7 @@
 		3AF74C08FDBBD1FFE6EE3248 /* Pods-KFXLocalSystemReporter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFXLocalSystemReporter_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KFXLocalSystemReporter_Example/Pods-KFXLocalSystemReporter_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		43E93500E9CAB62E58BF5699 /* Pods-KFXLocalSystemReporter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFXLocalSystemReporter_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KFXLocalSystemReporter_Tests/Pods-KFXLocalSystemReporter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5B62DDB31EDA22D7005C1206 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		5B911CCB20D10D3B00BDB8DF /* NOTES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = NOTES.md; path = ../NOTES.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* KFXLocalSystemReporter_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFXLocalSystemReporter_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -191,6 +193,7 @@
 				F6D3542AE96A5C63759E0D4B /* README.md */,
 				BC9D0A37583572D455EFC007 /* LICENSE */,
 				5B62DDB31EDA22D7005C1206 /* CHANGELOG.md */,
+				5B911CCB20D10D3B00BDB8DF /* NOTES.md */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -206,8 +209,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				89803BE056F1831D2C9DCDE9 /* [CP] Embed Pods Frameworks */,
-				97BD8955DA14E88BE6742A89 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,8 +227,6 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				95367D5A41DD14DC1907C78C /* [CP] Embed Pods Frameworks */,
-				1D540AD3F73B3A901F509E19 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -278,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B911CCC20D10D3B00BDB8DF /* NOTES.md in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -295,73 +295,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1D540AD3F73B3A901F509E19 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFXLocalSystemReporter_Tests/Pods-KFXLocalSystemReporter_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		89803BE056F1831D2C9DCDE9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-KFXLocalSystemReporter_Example/Pods-KFXLocalSystemReporter_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/KFXCore/KFXCore.framework",
-				"${BUILT_PRODUCTS_DIR}/KFXLocalSystemReporter/KFXLocalSystemReporter.framework",
-				"${BUILT_PRODUCTS_DIR}/KFXUtilities/KFXUtilities.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KFXCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KFXLocalSystemReporter.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KFXUtilities.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFXLocalSystemReporter_Example/Pods-KFXLocalSystemReporter_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		95367D5A41DD14DC1907C78C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFXLocalSystemReporter_Tests/Pods-KFXLocalSystemReporter_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		97BD8955DA14E88BE6742A89 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFXLocalSystemReporter_Example/Pods-KFXLocalSystemReporter_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A3497372419792F7F948DD43 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

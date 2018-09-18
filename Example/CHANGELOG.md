@@ -1,6 +1,8 @@
 
 # KFXLocalSystemReporter Change Log #
 
+### 0.9.0 | Updated for KFXCore v2.0.0 
+
 ### 0.8.1 | Updates for updated pod
 
 ### 0.8.0 | - Updates Licence, ReadMe

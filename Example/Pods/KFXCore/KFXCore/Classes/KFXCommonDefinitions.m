@@ -149,12 +149,12 @@ NSString*_Nullable KFXDeviceScreenSizeString(KFXDeviceScreenSize screenSize){
             string = @"iPhone Plus";
             break;
         }
-        case KFXDeviceScreenSizeiPhoneX:{
-            string = @"iPhone X";
+        case KFXDeviceScreenSizeiPhoneXRegular:{
+            string = @"iPhone X Regular";
             break;
         }
-        case KFXDeviceScreenSizeiPadMini:{
-            string = @"iPad Mini";
+        case KFXDeviceScreenSizeiPhoneXLarge:{
+            string = @"iPhone X Large";
             break;
         }
         case KFXDeviceScreenSizeiPadRegular:{
@@ -162,23 +162,111 @@ NSString*_Nullable KFXDeviceScreenSizeString(KFXDeviceScreenSize screenSize){
             break;
         }
         case KFXDeviceScreenSizeiPadPro9Inch:{
-            string = @"iPro Pad 9 Inch";
+            string = @"iPad Pro 9 Inch";
             break;
         }
         case KFXDeviceScreenSizeiPadPro10Inch:{
-            string = @"iPro Pad 10 Inch";
+            string = @"iPad Pro 10 Inch";
             break;
         }
         case KFXDeviceScreenSizeiPadPro12Inch:{
-            string = @"iPro Pad 12 Inch";
+            string = @"iPad Pro 12 Inch";
             break;
         }
         case KFXDeviceScreenSizeAppleWatch38mm:{
             string = @"Apple Watch 38mm";
             break;
         }
+        case KFXDeviceScreenSizeAppleWatch40mm:{
+            string = @"Apple Watch 40mm";
+            break;
+        }
         case KFXDeviceScreenSizeAppleWatch42mm:{
             string = @"Apple Watch 42mm";
+            break;
+        }
+        case KFXDeviceScreenSizeAppleWatch44mm:{
+            string = @"Apple Watch 44mm";
+            break;
+        }
+        default:
+            string = @"Undefined";
+            break;
+    }
+    return string;
+}
+
+
+NSString*_Nullable KFXDeviceResolutionString(KFXDeviceResolution resolution){
+    
+    NSString *string;
+    switch (resolution) {
+        case KFXDeviceResolutioniPhoneOriginalNonRetina:{
+            string = @"iPhone Original Non-Retina";
+            break;
+        }
+        case KFXDeviceResolutioniPhoneOriginalRetina:{
+            string = @"iPhone Original Retina";
+            break;
+        }
+        case KFXDeviceResolutioniPhoneSmall:{
+            string = @"iPhone Small";
+            break;
+        }
+        case KFXDeviceResolutioniPhoneRegular:{
+            string = @"iPhone Regular";
+            break;
+        }
+        case KFXDeviceResolutioniPhonePlus:{
+            string = @"iPhone Plus";
+            break;
+        }
+        case KFXDeviceResolutioniPhoneX:{
+            string = @"iPhone X";
+            break;
+        }
+        case KFXDeviceResolutioniPhoneXr:{
+            string = @"iPhone Xr";
+            break;
+        }
+        case KFXDeviceResolutioniPhoneXMax:{
+            string = @"iPhone X Max";
+            break;
+        }
+        case KFXDeviceResolutioniPadOriginal:{
+            string = @"iPad Original";
+            break;
+        }
+        case KFXDeviceResolutioniPadRegular:{
+            string = @"iPad Regular";
+            break;
+        }
+        case KFXDeviceResolutioniPadPro9Inch:{
+            string = @"iPad Pro 9 Inch";
+            break;
+        }
+        case KFXDeviceResolutioniPadPro10Inch:{
+            string = @"iPad Pro 10 Inch";
+            break;
+        }
+        case KFXDeviceResolutioniPadPro12Inch:{
+            string = @"iPad Pro 12 Inch";
+            break;
+        }
+        case KFXDeviceResolutionAppleWatch38mm:{
+            string = @"Apple Watch 38mm";
+            break;
+        }
+        case KFXDeviceResolutionAppleWatch40mm:{
+            string = @"Apple Watch 40mm";
+            break;
+        }
+        case KFXDeviceResolutionAppleWatch42mm:{
+            string = @"Apple Watch 42mm";
+            break;
+        }
+        case KFXDeviceResolutionAppleWatch44mm:{
+            string = @"Apple Watch 44mm";
             break;
         }
         default:
