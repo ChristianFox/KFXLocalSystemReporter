@@ -16,6 +16,9 @@
 #define dequal(a,b) (fabs((a) - (b)) < DBL_EPSILON)
 #define dequalzero(a) (fabs(a) < DBL_EPSILON)
 
+//------------------------
+#pragma mark Clamping
+//------------------------
 /*
  * https://stackoverflow.com/a/14770282/4082459
  */
@@ -25,6 +28,13 @@ __typeof__(low) __low = (low);\
 __typeof__(high) __high = (high);\
 __x > __high ? __high : (__x < __low ? __low : __x);\
 })
+
+//------------------------
+#pragma mark Conversion
+//------------------------
+#define KFXMATHSRadiansToDegrees(radians) ((radians) * (180.0 / M_PI))
+#define KFXMATHSDegreesToRadians(degrees) ((degrees) * (M_PI / 180.0))
+
 
 @import Foundation;
 @import CoreGraphics;

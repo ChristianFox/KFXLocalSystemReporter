@@ -1,11 +1,18 @@
-# use_frameworks!
-platform :ios, '8.0'
+platform :ios, '9.0'
+use_frameworks!
+inhibit_all_warnings!
+
+install! 'cocoapods',
+:generate_multiple_pod_projects => true,
+:incremental_installation => true
 
 target 'KFXLocalSystemReporter_Example' do
     pod 'KFXLocalSystemReporter', :path => '../'
-    
+
+	### If using from trunk
+	source 'https://cdn.cocoapods.org/'
     pod 'KFXCore'
-    pod 'KFXUtilities'
+    pod 'KFXUtilities', '~> 2.4.0'
     
     target 'KFXLocalSystemReporter_Tests' do
         inherit! :search_paths

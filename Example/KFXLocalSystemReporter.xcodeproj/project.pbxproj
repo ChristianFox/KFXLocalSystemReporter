@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FF6BB8171991FFF1ADF4920 /* Pods_KFXLocalSystemReporter_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12B885201DB1229C3AA76B0 /* Pods_KFXLocalSystemReporter_Tests.framework */; };
 		5B911CCC20D10D3B00BDB8DF /* NOTES.md in Resources */ = {isa = PBXBuildFile; fileRef = 5B911CCB20D10D3B00BDB8DF /* NOTES.md */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -21,8 +22,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		69FDE76D0B3C54FB26B0DCBC /* libPods-KFXLocalSystemReporter_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D9B484A287C68FEFEACD30 /* libPods-KFXLocalSystemReporter_Example.a */; };
-		767E8F7AE1F3058E7B25984D /* libPods-KFXLocalSystemReporter_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B08EFA685B89E7AAC2BB89 /* libPods-KFXLocalSystemReporter_Tests.a */; };
+		7DA43990890173DD3716196F /* Pods_KFXLocalSystemReporter_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0577A7C10FA87B1B4083ABE7 /* Pods_KFXLocalSystemReporter_Example.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03B08EFA685B89E7AAC2BB89 /* libPods-KFXLocalSystemReporter_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KFXLocalSystemReporter_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0577A7C10FA87B1B4083ABE7 /* Pods_KFXLocalSystemReporter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KFXLocalSystemReporter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1535FFE2AEC778F217211ECE /* Pods-KFXLocalSystemReporter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFXLocalSystemReporter_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KFXLocalSystemReporter_Tests/Pods-KFXLocalSystemReporter_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3AF74C08FDBBD1FFE6EE3248 /* Pods-KFXLocalSystemReporter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFXLocalSystemReporter_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KFXLocalSystemReporter_Example/Pods-KFXLocalSystemReporter_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		43E93500E9CAB62E58BF5699 /* Pods-KFXLocalSystemReporter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFXLocalSystemReporter_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KFXLocalSystemReporter_Tests/Pods-KFXLocalSystemReporter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -63,9 +63,9 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		A6D9B484A287C68FEFEACD30 /* libPods-KFXLocalSystemReporter_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KFXLocalSystemReporter_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91AAC91F04C051759DF8D56 /* Pods-KFXLocalSystemReporter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFXLocalSystemReporter_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-KFXLocalSystemReporter_Example/Pods-KFXLocalSystemReporter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BC9D0A37583572D455EFC007 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D12B885201DB1229C3AA76B0 /* Pods_KFXLocalSystemReporter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KFXLocalSystemReporter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9FD89CF5BEB4EA6D39EA47E /* KFXLocalSystemReporter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KFXLocalSystemReporter.podspec; path = ../KFXLocalSystemReporter.podspec; sourceTree = "<group>"; };
 		F6D3542AE96A5C63759E0D4B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,7 +78,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				69FDE76D0B3C54FB26B0DCBC /* libPods-KFXLocalSystemReporter_Example.a in Frameworks */,
+				7DA43990890173DD3716196F /* Pods_KFXLocalSystemReporter_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +89,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				767E8F7AE1F3058E7B25984D /* libPods-KFXLocalSystemReporter_Tests.a in Frameworks */,
+				1FF6BB8171991FFF1ADF4920 /* Pods_KFXLocalSystemReporter_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +135,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				A6D9B484A287C68FEFEACD30 /* libPods-KFXLocalSystemReporter_Example.a */,
-				03B08EFA685B89E7AAC2BB89 /* libPods-KFXLocalSystemReporter_Tests.a */,
+				0577A7C10FA87B1B4083ABE7 /* Pods_KFXLocalSystemReporter_Example.framework */,
+				D12B885201DB1229C3AA76B0 /* Pods_KFXLocalSystemReporter_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -209,6 +209,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
+				D3F0394FA1676AD4EC085B25 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +259,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -329,6 +331,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3F0394FA1676AD4EC085B25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KFXLocalSystemReporter_Example/Pods-KFXLocalSystemReporter_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KFXCore/KFXCore.framework",
+				"${BUILT_PRODUCTS_DIR}/KFXLocalSystemReporter/KFXLocalSystemReporter.framework",
+				"${BUILT_PRODUCTS_DIR}/KFXUtilities/KFXUtilities.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KFXCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KFXLocalSystemReporter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KFXUtilities.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KFXLocalSystemReporter_Example/Pods-KFXLocalSystemReporter_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -464,6 +488,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KFXLocalSystemReporter/KFXLocalSystemReporter-Prefix.pch";
 				INFOPLIST_FILE = "KFXLocalSystemReporter/KFXLocalSystemReporter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MARKETING_VERSION = 0.10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -480,6 +506,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KFXLocalSystemReporter/KFXLocalSystemReporter-Prefix.pch";
 				INFOPLIST_FILE = "KFXLocalSystemReporter/KFXLocalSystemReporter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MARKETING_VERSION = 0.10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -504,6 +532,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KFXLocalSystemReporter_Example.app/KFXLocalSystemReporter_Example";
@@ -524,6 +553,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KFXLocalSystemReporter_Example.app/KFXLocalSystemReporter_Example";

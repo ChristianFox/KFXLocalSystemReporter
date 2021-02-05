@@ -1,0 +1,54 @@
+BUILD_CONFIGURATIONS:
+  Debug: :debug
+  Release: :release
+CACHE_KEYS:
+  KFXCore:
+    BUILD_SETTINGS_CHECKSUM:
+      KFXCore:
+        :debug: cab5590a46f72c22e0a2ff8e87f24a1b
+        :release: cab5590a46f72c22e0a2ff8e87f24a1b
+    CHECKSUM: ac4ee93c47c41197933a52d3a6889fbf10ca3de2
+    PROJECT_NAME: KFXCore
+    SPECS:
+      - KFXCore (2.2.0)
+  KFXLocalSystemReporter:
+    BUILD_SETTINGS_CHECKSUM:
+      KFXLocalSystemReporter:
+        :debug: d52090735b95e0d3bc1823bdbbd5ba89
+        :release: d52090735b95e0d3bc1823bdbbd5ba89
+    CHECKSUM: db69b0f79e022b9d7e424af008b182dc8529e485
+    FILES:
+      - "../../KFXLocalSystemReporter/Classes/KFXDeviceActivityReporter.h"
+      - "../../KFXLocalSystemReporter/Classes/KFXDeviceActivityReporter.m"
+      - "../../KFXLocalSystemReporter/Classes/KFXHardwareReporter.h"
+      - "../../KFXLocalSystemReporter/Classes/KFXHardwareReporter.m"
+      - "../../KFXLocalSystemReporter/Classes/KFXLocalSystemReporter.h"
+      - "../../KFXLocalSystemReporter/Classes/KFXSoftwareReporter.h"
+      - "../../KFXLocalSystemReporter/Classes/KFXSoftwareReporter.m"
+      - "../../KFXLocalSystemReporter/Classes/KFXSystemReporter.h"
+      - "../../KFXLocalSystemReporter/Classes/KFXSystemReporter.m"
+      - "../../LICENSE"
+      - "../../README.md"
+    PROJECT_NAME: KFXLocalSystemReporter
+    SPECS:
+      - KFXLocalSystemReporter (0.10.0)
+  KFXUtilities:
+    BUILD_SETTINGS_CHECKSUM:
+      KFXUtilities:
+        :debug: 4ff7888aad3043c3ad825b6058c2aa29
+        :release: 4ff7888aad3043c3ad825b6058c2aa29
+    CHECKSUM: dbffa43651082400fa02a8f339f53aeab56c75d1
+    PROJECT_NAME: KFXUtilities
+    SPECS:
+      - KFXUtilities (2.4.0)
+  Pods-KFXLocalSystemReporter_Example:
+    BUILD_SETTINGS_CHECKSUM:
+      Debug: e2d7f7b45efe8f7948a5b183bbc2e860
+      Release: e2d7f7b45efe8f7948a5b183bbc2e860
+  Pods-KFXLocalSystemReporter_Tests:
+    BUILD_SETTINGS_CHECKSUM:
+      Debug: c9192e27b8158917dbd672d23968d2d7
+      Release: c9192e27b8158917dbd672d23968d2d7
+OBJECT_VERSION: 46
+PLUGINS:
+  {}

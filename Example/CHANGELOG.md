@@ -1,6 +1,9 @@
 
 # KFXLocalSystemReporter Change Log #
 
+### 0.10.0 | Added +hasNotch. Update to use newish cocoapods options incremental_installation and generate_multiple_pod_projects
+
+
 ### 0.9.0 | Updated for KFXCore v2.0.0 
 
 ### 0.8.1 | Updates for updated pod

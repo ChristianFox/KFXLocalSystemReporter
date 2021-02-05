@@ -133,6 +133,7 @@ typedef void(^KFXProgressAndMessageBlock)(CGFloat progress, NSString *_Nullable 
 typedef void(^KFXSyncResultArraysBlock)(NSArray *_Nullable created, NSArray *_Nullable updated, NSArray *_Nullable deleted);
 typedef void(^KFXSyncResultDictionarysBlock)(NSDictionary *_Nullable created, NSDictionary *_Nullable updated, NSDictionary *_Nullable deleted);
 typedef void(^KFXSyncResultAnonObjectsBlock)(id _Nullable created, id _Nullable updated, id  _Nullable deleted);
+typedef void(^KFXNetworkResponseResultBlock)(NSData *_Nullable data, NSURLResponse *_Nullable response, NSError *_Nullable error);
 
 
 //-----------------------------------

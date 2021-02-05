@@ -47,11 +47,6 @@ CGRect kfx_CGRectWithNewHeight(CGRect rect, CGFloat height){
     return (CGRect){rect.origin,(CGSize){rect.size.width,height}};
 }
 
-/// Returns a CGPoint which is the centre of the rect
-CGPoint kfx_CGRectGetCentre(CGRect rect){
-    return CGPointMake(CGRectGetMidX(rect), CGRectGetMidY(rect));
-}
-
 /// Returns a new CGRect with the given size and origin calculated from the centre
 CGRect kfx_CGRectMakeWithCentreAndSize(CGPoint centre, CGSize size){
     CGPoint origin = (CGPoint){
@@ -84,6 +79,62 @@ CGRect kfx_CGRectRounded(CGRect rect){
                       (CGFloat)round(rect.size.width),
                       (CGFloat)round(rect.size.height));
 }
+
+//------------------------
+#pragma mark CGPoints from Rects
+//------------------------
+//---------------
+// Centres
+//---------------
+/// Returns a CGPoint which is the centre of the rect
+CGPoint kfx_CGRectGetCentre(CGRect rect){
+    return CGPointMake(CGRectGetMidX(rect), CGRectGetMidY(rect));
+}
+
+
+/// Return a CGPoint for the left centre
+CGPoint kfx_CGRectCentreLeft(CGRect rect){
+    return CGPointMake(rect.origin.x, CGRectGetMidY(rect));
+}
+
+/// Return a CGPoint for the top centre
+CGPoint kfx_CGRectCentreTop(CGRect rect){
+    return CGPointMake(CGRectGetMidX(rect), rect.origin.y);
+}
+
+/// Return a CGPoint for the right centre
+CGPoint kfx_CGRectCentreRight(CGRect rect){
+    return CGPointMake(rect.origin.x + rect.size.width, CGRectGetMidY(rect));
+}
+
+/// Return a CGPoint for the bottom centre
+CGPoint kfx_CGRectCentreBottom(CGRect rect){
+    return CGPointMake(CGRectGetMidX(rect), rect.origin.y + rect.size.height);
+}
+
+//---------------
+// Corners
+//---------------
+/// Return a CGPoint for the top left corner (yes origin)
+CGPoint kfx_CGRectCornerTopLeft(CGRect rect){
+    return rect.origin;
+}
+
+/// Return a CGPoint for the top right corner
+CGPoint kfx_CGRectCornerTopRight(CGRect rect){
+    return  CGPointMake(rect.origin.x + rect.size.width, rect.origin.y);
+}
+
+/// Return a CGPoint for the bottom right corner
+CGPoint kfx_CGRectCornerBottomRight(CGRect rect){
+    return  CGPointMake(rect.origin.x + rect.size.width, rect.origin.y + rect.size.height);
+}
+
+/// Return a CGPoint for the bottom left corner
+CGPoint kfx_CGRectCornerBottomLeft(CGRect rect){
+    return  CGPointMake(rect.origin.x, rect.origin.y + rect.size.height);
+}
+
 
 //--------------------------------------------------------
 #pragma mark CGPoint

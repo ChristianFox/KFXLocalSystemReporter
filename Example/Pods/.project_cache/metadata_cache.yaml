@@ -1,0 +1,20 @@
+KFXCore:
+  LABEL: KFXCore
+  PROJECT_PATH: KFXCore.xcodeproj
+  UUID: 1BDC751E25A5B37E9C9CA69FDE758AC8
+KFXLocalSystemReporter:
+  LABEL: KFXLocalSystemReporter
+  PROJECT_PATH: KFXLocalSystemReporter.xcodeproj
+  UUID: 3E91943E1002D2ED210AD339578F65A9
+KFXUtilities:
+  LABEL: KFXUtilities
+  PROJECT_PATH: KFXUtilities.xcodeproj
+  UUID: 7E09FC8940240B96DFB05B6B95B76EF0
+Pods-KFXLocalSystemReporter_Example:
+  LABEL: Pods-KFXLocalSystemReporter_Example
+  PROJECT_PATH: Pods.xcodeproj
+  UUID: DDF5E6BD9C7A998771ADDB852DE28E20
+Pods-KFXLocalSystemReporter_Tests:
+  LABEL: Pods-KFXLocalSystemReporter_Tests
+  PROJECT_PATH: Pods.xcodeproj
+  UUID: 91E29F1D7058049D181C62A54194A968

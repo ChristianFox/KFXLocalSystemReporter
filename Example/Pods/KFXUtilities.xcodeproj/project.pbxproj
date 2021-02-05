@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3290D1EE8173E882C1736EECBBEFCA4D /* KFXFileHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 60D2E42ACCFC042868A5FFDE65CDBC52 /* KFXFileHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5602B03E51675EC1B5B107B0192D819D /* KFXFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D791FBADEB0A4D0BEF5FAB607850EB7 /* KFXFileHelper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5F4F3AEBA0BC05A883FF40B1B8888F80 /* KFXUtilities-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F296E1548AE64B0AC1B4E6E2A0AB216A /* KFXUtilities-dummy.m */; };
+		72DF6AF1C7CF693A11A3DF202765D852 /* KFXMaths.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DF624FEEBD544DFB1AF5DAD15A291A5 /* KFXMaths.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EC4675E8A045BD882C8CFE1E320A0B1 /* KFXGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDDA478B4A9264CD89CF1CA6D88E32F /* KFXGeometry.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7F8DB8A33F027351F015B4B76A284478 /* KFXUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = A463FF6BD6DEE1763AF063E500D10F42 /* KFXUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		807D790BFB04E91BB93FD19EB6393B5F /* KFXUtilities-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87BB89C552F989BBED35E9487CEE6BC0 /* KFXUtilities-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C464B710C71D8CE79A0FBC454905E0D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E975F5F76C3A47F0C21EA5A7D5EEBA /* Foundation.framework */; };
+		C660192423F04A3A2AA337C220F3B680 /* KFXGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = BA99AE86559305133ABC311418F52D5A /* KFXGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D14FB58103C4567CD41A76E501E300C1 /* KFXMaths.m in Sources */ = {isa = PBXBuildFile; fileRef = AED1BF4B380EE0987177A337B6BE6D3B /* KFXMaths.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DBF6ECA5506B52CBBF3F2700FCC5F58A /* KFXMailHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B1FEB25A65A75DCF407966F9CEEAC5 /* KFXMailHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB8A744F3CB651393BAE39198CE2AEEA /* KFXMailHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2822F3AEB48F63F559B6B2F2F30D679E /* KFXMailHelper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3BF7A787377821802972945A1C2131E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC0C6BE62A0FF7D5E4E6E9AC308EE09E /* KFXCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BDC751E25A5B37E9C9CA69FDE758AC8;
+			remoteInfo = KFXCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		172A07EC893093006DFDD220E7E9E8EF /* KFXUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KFXUtilities.framework; path = KFXUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21B1FEB25A65A75DCF407966F9CEEAC5 /* KFXMailHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KFXMailHelper.h; path = KFXUtilities/Classes/KFXMailHelper.h; sourceTree = "<group>"; };
+		2822F3AEB48F63F559B6B2F2F30D679E /* KFXMailHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KFXMailHelper.m; path = KFXUtilities/Classes/KFXMailHelper.m; sourceTree = "<group>"; };
+		2DF624FEEBD544DFB1AF5DAD15A291A5 /* KFXMaths.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KFXMaths.h; path = KFXUtilities/Classes/KFXMaths.h; sourceTree = "<group>"; };
+		3D791FBADEB0A4D0BEF5FAB607850EB7 /* KFXFileHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KFXFileHelper.m; path = KFXUtilities/Classes/KFXFileHelper.m; sourceTree = "<group>"; };
+		4EB9A691065CB828BB62E8A0F6939A47 /* KFXUtilities.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KFXUtilities.modulemap; sourceTree = "<group>"; };
+		50E975F5F76C3A47F0C21EA5A7D5EEBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5E5C09CD2AF5AFE4A9562496A9986E4B /* KFXUtilities-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KFXUtilities-Info.plist"; sourceTree = "<group>"; };
+		60D2E42ACCFC042868A5FFDE65CDBC52 /* KFXFileHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KFXFileHelper.h; path = KFXUtilities/Classes/KFXFileHelper.h; sourceTree = "<group>"; };
+		614A2FFFFE4AA55BE157DE1E30301022 /* KFXUtilities-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KFXUtilities-prefix.pch"; sourceTree = "<group>"; };
+		87BB89C552F989BBED35E9487CEE6BC0 /* KFXUtilities-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KFXUtilities-umbrella.h"; sourceTree = "<group>"; };
+		8FE541C052D316FB55F57984DF87F907 /* KFXUtilities.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KFXUtilities.debug.xcconfig; sourceTree = "<group>"; };
+		A463FF6BD6DEE1763AF063E500D10F42 /* KFXUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KFXUtilities.h; path = KFXUtilities/Classes/KFXUtilities.h; sourceTree = "<group>"; };
+		AED1BF4B380EE0987177A337B6BE6D3B /* KFXMaths.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KFXMaths.m; path = KFXUtilities/Classes/KFXMaths.m; sourceTree = "<group>"; };
+		BA99AE86559305133ABC311418F52D5A /* KFXGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KFXGeometry.h; path = KFXUtilities/Classes/KFXGeometry.h; sourceTree = "<group>"; };
+		DFDDA478B4A9264CD89CF1CA6D88E32F /* KFXGeometry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KFXGeometry.m; path = KFXUtilities/Classes/KFXGeometry.m; sourceTree = "<group>"; };
+		F296E1548AE64B0AC1B4E6E2A0AB216A /* KFXUtilities-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KFXUtilities-dummy.m"; sourceTree = "<group>"; };
+		FC0C6BE62A0FF7D5E4E6E9AC308EE09E /* KFXCore */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KFXCore; path = KFXCore.xcodeproj; sourceTree = "<group>"; };
+		FC46331E36877822E06503A7F408903D /* KFXUtilities.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KFXUtilities.release.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06D5E24FF4C7AE96240DB088AB009571 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C464B710C71D8CE79A0FBC454905E0D1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36B9194C46D1EC9045012C7B5FC5FA37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A88319C43EE41979FDF6CBAC728CB220 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A6C430721C1E652FD7E7FEE4EF12A86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				172A07EC893093006DFDD220E7E9E8EF /* KFXUtilities.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E823E268AD7A1A335A08AF665E3DAE3 /* KFXUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				60D2E42ACCFC042868A5FFDE65CDBC52 /* KFXFileHelper.h */,
+				3D791FBADEB0A4D0BEF5FAB607850EB7 /* KFXFileHelper.m */,
+				BA99AE86559305133ABC311418F52D5A /* KFXGeometry.h */,
+				DFDDA478B4A9264CD89CF1CA6D88E32F /* KFXGeometry.m */,
+				21B1FEB25A65A75DCF407966F9CEEAC5 /* KFXMailHelper.h */,
+				2822F3AEB48F63F559B6B2F2F30D679E /* KFXMailHelper.m */,
+				2DF624FEEBD544DFB1AF5DAD15A291A5 /* KFXMaths.h */,
+				AED1BF4B380EE0987177A337B6BE6D3B /* KFXMaths.m */,
+				A463FF6BD6DEE1763AF063E500D10F42 /* KFXUtilities.h */,
+				D4007BC1F1B7F3BB8361D708010EBBCC /* Support Files */,
+			);
+			name = KFXUtilities;
+			path = KFXUtilities;
+			sourceTree = "<group>";
+		};
+		A88319C43EE41979FDF6CBAC728CB220 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				50E975F5F76C3A47F0C21EA5A7D5EEBA /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B3E80FC1CD8A94CBD39F4B5E5E98E0C2 = {
+			isa = PBXGroup;
+			children = (
+				FA8FD08319AF1D0B9F8AD7905C332432 /* Dependencies */,
+				36B9194C46D1EC9045012C7B5FC5FA37 /* Frameworks */,
+				8E823E268AD7A1A335A08AF665E3DAE3 /* KFXUtilities */,
+				4A6C430721C1E652FD7E7FEE4EF12A86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4007BC1F1B7F3BB8361D708010EBBCC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4EB9A691065CB828BB62E8A0F6939A47 /* KFXUtilities.modulemap */,
+				F296E1548AE64B0AC1B4E6E2A0AB216A /* KFXUtilities-dummy.m */,
+				5E5C09CD2AF5AFE4A9562496A9986E4B /* KFXUtilities-Info.plist */,
+				614A2FFFFE4AA55BE157DE1E30301022 /* KFXUtilities-prefix.pch */,
+				87BB89C552F989BBED35E9487CEE6BC0 /* KFXUtilities-umbrella.h */,
+				8FE541C052D316FB55F57984DF87F907 /* KFXUtilities.debug.xcconfig */,
+				FC46331E36877822E06503A7F408903D /* KFXUtilities.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KFXUtilities";
+			sourceTree = "<group>";
+		};
+		FA8FD08319AF1D0B9F8AD7905C332432 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				FC0C6BE62A0FF7D5E4E6E9AC308EE09E /* KFXCore */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B684624B52020D3BEB15C33100CE0343 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3290D1EE8173E882C1736EECBBEFCA4D /* KFXFileHelper.h in Headers */,
+				C660192423F04A3A2AA337C220F3B680 /* KFXGeometry.h in Headers */,
+				DBF6ECA5506B52CBBF3F2700FCC5F58A /* KFXMailHelper.h in Headers */,
+				72DF6AF1C7CF693A11A3DF202765D852 /* KFXMaths.h in Headers */,
+				807D790BFB04E91BB93FD19EB6393B5F /* KFXUtilities-umbrella.h in Headers */,
+				7F8DB8A33F027351F015B4B76A284478 /* KFXUtilities.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7E09FC8940240B96DFB05B6B95B76EF0 /* KFXUtilities */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 876B722486AE6C5CC393C74023BD1600 /* Build configuration list for PBXNativeTarget "KFXUtilities" */;
+			buildPhases = (
+				B684624B52020D3BEB15C33100CE0343 /* Headers */,
+				E06E7CAAF0D42E6826F70C0C066B8F6A /* Sources */,
+				06D5E24FF4C7AE96240DB088AB009571 /* Frameworks */,
+				24F4F55160139AA1C9195AFA6334B7F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				211987B3E3C341AFF11B0715147EEF05 /* PBXTargetDependency */,
+			);
+			name = KFXUtilities;
+			productName = KFXUtilities;
+			productReference = 172A07EC893093006DFDD220E7E9E8EF /* KFXUtilities.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		137AA8EB013C1AD68EF2130425F90107 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 5C568B2ABDF0AE60A551893A776F84D7 /* Build configuration list for PBXProject "KFXUtilities" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3E80FC1CD8A94CBD39F4B5E5E98E0C2;
+			productRefGroup = 4A6C430721C1E652FD7E7FEE4EF12A86 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProjectRef = FC0C6BE62A0FF7D5E4E6E9AC308EE09E /* KFXCore */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				7E09FC8940240B96DFB05B6B95B76EF0 /* KFXUtilities */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24F4F55160139AA1C9195AFA6334B7F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E06E7CAAF0D42E6826F70C0C066B8F6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5602B03E51675EC1B5B107B0192D819D /* KFXFileHelper.m in Sources */,
+				7EC4675E8A045BD882C8CFE1E320A0B1 /* KFXGeometry.m in Sources */,
+				EB8A744F3CB651393BAE39198CE2AEEA /* KFXMailHelper.m in Sources */,
+				D14FB58103C4567CD41A76E501E300C1 /* KFXMaths.m in Sources */,
+				5F4F3AEBA0BC05A883FF40B1B8888F80 /* KFXUtilities-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		211987B3E3C341AFF11B0715147EEF05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KFXCore;
+			targetProxy = 3BF7A787377821802972945A1C2131E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4AE3838E9F47480F84C162040A16FBD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		6F13CFBD751455CF477028432E3C4EC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC46331E36877822E06503A7F408903D /* KFXUtilities.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KFXUtilities/KFXUtilities-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KFXUtilities/KFXUtilities-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KFXUtilities/KFXUtilities.modulemap";
+				PRODUCT_MODULE_NAME = KFXUtilities;
+				PRODUCT_NAME = KFXUtilities;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6F89DDC12B81F8A9901BC547B8E052BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FE541C052D316FB55F57984DF87F907 /* KFXUtilities.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KFXUtilities/KFXUtilities-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KFXUtilities/KFXUtilities-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KFXUtilities/KFXUtilities.modulemap";
+				PRODUCT_MODULE_NAME = KFXUtilities;
+				PRODUCT_NAME = KFXUtilities;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B94967B48C0949CAC10EBA8E31D94BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C568B2ABDF0AE60A551893A776F84D7 /* Build configuration list for PBXProject "KFXUtilities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B94967B48C0949CAC10EBA8E31D94BB /* Debug */,
+				4AE3838E9F47480F84C162040A16FBD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		876B722486AE6C5CC393C74023BD1600 /* Build configuration list for PBXNativeTarget "KFXUtilities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F89DDC12B81F8A9901BC547B8E052BF /* Debug */,
+				6F13CFBD751455CF477028432E3C4EC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 137AA8EB013C1AD68EF2130425F90107 /* Project object */;
+}

@@ -20,6 +20,7 @@
 +(KFXDeviceFamily)deviceFamily;
 +(KFXDeviceScreenSize)deviceScreenSizeType;
 +(KFXDeviceResolution)deviceResolutionType;
++(BOOL)hasNotch;
 
 // Device capabilities
 +(BOOL)canDevicePlaceAPhoneCall;

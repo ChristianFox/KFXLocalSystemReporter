@@ -47,9 +47,6 @@ CGRect kfx_CGRectWithNewWidth(CGRect rect, CGFloat width);
 /// Returns a new CGRect the same as the original but with the new height
 CGRect kfx_CGRectWithNewHeight(CGRect rect, CGFloat height);
 
-/// Returns a CGPoint which is the centre of the rect
-CGPoint kfx_CGRectGetCentre(CGRect rect);
-
 /// Returns a new CGRect with the given size and origin calculated from the centre
 CGRect kfx_CGRectMakeWithCentreAndSize(CGPoint centre, CGSize size);
 
@@ -62,7 +59,41 @@ CGRect kfx_CGRectCeiling(CGRect rect);
 /// Returns a CGRect with all values rounded from the original
 CGRect kfx_CGRectRounded(CGRect rect);
 
+//------------------------
+#pragma mark CGPoints from Rects
+//------------------------
+//---------------
+// Centres
+//---------------
+/// Returns a CGPoint which is the centre of the rect
+CGPoint kfx_CGRectGetCentre(CGRect rect);
 
+/// Return a CGPoint for the left centre
+CGPoint kfx_CGRectCentreLeft(CGRect rect);
+
+/// Return a CGPoint for the top centre
+CGPoint kfx_CGRectCentreTop(CGRect rect);
+
+/// Return a CGPoint for the right centre
+CGPoint kfx_CGRectCentreRight(CGRect rect);
+
+/// Return a CGPoint for the bottom centre
+CGPoint kfx_CGRectCentreBottom(CGRect rect);
+
+//---------------
+// Corners
+//---------------
+/// Return a CGPoint for the top left corner (yes origin)
+CGPoint kfx_CGRectCornerTopLeft(CGRect rect);
+
+/// Return a CGPoint for the top right corner
+CGPoint kfx_CGRectCornerTopRight(CGRect rect);
+
+/// Return a CGPoint for the bottom right corner
+CGPoint kfx_CGRectCornerBottomRight(CGRect rect);
+
+/// Return a CGPoint for the bottom left corner
+CGPoint kfx_CGRectCornerBottomLeft(CGRect rect);
 
 //--------------------------------------------------------
 #pragma mark CGPoint

@@ -51,6 +51,11 @@
     if ([hardware isEqualToString:@"iPhone10,5"]) return @"iPhone 8 Plus";
     if ([hardware isEqualToString:@"iPhone10,6"]) return @"iPhone X";
 
+    if ([hardware isEqualToString:@"iPhone11,2"])   return @"iPhone XS";
+    if ([hardware isEqualToString:@"iPhone11,4"])   return @"iPhone XS Max";
+    if ([hardware isEqualToString:@"iPhone11,6"])   return @"iPhone XS Max (China)"; // China dual-sim
+    if ([hardware isEqualToString:@"iPhone11,8"])   return @"iPhone XR";
+
     if ([hardware isEqualToString:@"iPod1,1"]) return @"iPod Touch (1 Gen)";
     if ([hardware isEqualToString:@"iPod2,1"]) return @"iPod Touch (2 Gen)";
     if ([hardware isEqualToString:@"iPod3,1"]) return @"iPod Touch (3 Gen)";
@@ -101,10 +106,20 @@
     if ([hardware isEqualToString:@"iPad7,2"]) return @"iPad Pro 12.9-Inch (Wi-Fi/Cell - 2nd Gen)";
     if ([hardware isEqualToString:@"iPad7,3"]) return @"iPad Pro 10.5-Inch (Wi-Fi Only)";
     if ([hardware isEqualToString:@"iPad7,4"]) return @"iPad Pro 10.5-Inch (Wi-Fi/Cellular)";
+    if ([hardware isEqualToString:@"iPad7,5"]) return @"iPad 6G (WiFi)";
+    if ([hardware isEqualToString:@"iPad7,6"]) return @"iPad 6G (Cellular)";
 
 //    if ([hardware isEqualToString:@"i386"]) return @"Simulator";
 //    if ([hardware isEqualToString:@"x86_64"]) return @"Simulator";
     
+    // Apple TV https://www.theiphonewiki.com/wiki/Apple_TV
+    if ([hardware isEqualToString:@"AppleTV1,1"]) return @"Apple TV 1G";
+    if ([hardware isEqualToString:@"AppleTV2,1"]) return @"Apple TV 2G";
+    if ([hardware isEqualToString:@"AppleTV3,1"]) return @"Apple TV 3G";
+    if ([hardware isEqualToString:@"AppleTV3,2"]) return @"Apple TV 3G"; // small, incremental update over 3,1
+    if ([hardware isEqualToString:@"AppleTV5,3"]) return @"Apple TV 4G"; // as 4,1 was never released, 5,1 is actually 4th generation
+    if ([hardware isEqualToString:@"AppleTV6,2"]) return @"Apple TV (4K)";
+
     // https://github.com/erichoracek/UIDevice-Hardware/blob/master/UIDevice-Hardware.m
     // Simulator
     if ([hardware hasSuffix:@"86"] || [hardware isEqual:@"x86_64"])
@@ -286,6 +301,13 @@
             break;
     }
     return type;
+}
+
++(BOOL)hasNotch{
+    
+    KFXDeviceScreenSize screenSize = [self deviceScreenSizeType];
+    return (screenSize == KFXDeviceScreenSizeiPhoneXRegular
+            || screenSize == KFXDeviceScreenSizeiPhoneXLarge);
 }
 
 
